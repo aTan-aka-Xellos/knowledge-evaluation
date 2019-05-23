@@ -1,7 +1,7 @@
 # Knowledge evaluation
 
 ## Engineering Management
-#### [Process Planning (SDLC)](Process Planning (SDLC).md)
+#### [Process Planning (SDLC)](Process Planning \(SDLC\).md)
 #### [Estimation](Estimation.md)
 
 
