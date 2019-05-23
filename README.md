@@ -10,7 +10,7 @@
 
 ## Design
 #### [OOD (Competent)](OOD.md)
-#### [DB Design](DB Design.md)
+#### [DB Design](DB%20Design.md)
 #### [Modeling](Modeling.md)
 #### [Security](Security.md)
 #### [Algorithms](Algorithms.md)
