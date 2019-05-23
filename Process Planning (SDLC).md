@@ -106,13 +106,16 @@ A key principle of Scrum is the dual recognition that customers will change thei
 
 #### Product owner  
 
-The product owner, representing the product's stakeholders and the voice of the customer, is responsible for the product backlog and accountable for maximizing the value that the team delivers. The product owner defines the product in customer-centric terms (typically user stories), adds them to the product backlog, and prioritizes them based on importance and dependencies.  
+The product owner, representing the product's stakeholders and the voice of the customer, is responsible for the product backlog and accountable for maximizing the value that the team delivers. 
+
+The product owner defines the product in customer-centric terms (typically user stories), adds them to the product backlog, and prioritizes them based on importance and dependencies.  
+
 This role should not be combined with that of the scrum master.  
 The product owner should not dictate how the team reaches a technical solution, but rather will seek consensus among the team members.  
 This role is crucial and requires a deep understanding of both sides: the business and the engineers (developers) in the scrum team.  
 Communication is a core responsibility of the product owner.  
 
-#### Responsibilities:
+##### Responsibilities:
 * Organize further meetings to demonstrate the solution to key stakeholders who were not present at a sprint review.
 * Define and announce releases.
 * Communicate delivery and team status.
@@ -120,6 +123,30 @@ Communication is a core responsibility of the product owner.
 * Share RAID (Risks, Assumptions, Issues and Dependencies) with stakeholders.
 * Negotiate priorities, scope, funding, and schedule.
 * Ensure that the product backlog is visible, transparent and clear.
+
+#### Development team
+The development team is responsible for delivering potentially releasable product increments every sprint.  
+
+The development team in Scrum is self-organizing, and any interaction outside the team is managed by the scrum master (who will protect the team), or the product owner (who has regular interactions with all stakeholders).  
+
+The team has from three to nine members who carry out all tasks required to build the product increments (analysis, design, development, testing, technical writing, etc.).
+
+#### Scrum master
+Scrum is facilitated by a scrum master, who is accountable for removing impediments to the ability of the team to deliver the product goals and deliverables.  
+
+The scrum master is not a traditional team lead or project manager but acts as a buffer between the team and any distracting influences.   
+The scrum master ensures that the scrum framework is followed.  
+
+One of the ways the scrum master role differs from a project manager is that the latter may have people management responsibilities and the scrum master does not.  
+
+##### Responsibilities:
+* Helping the product owner maintain the product backlog
+* Helping the team to determine the definition of done for the product
+* Coaching the team, within the Scrum principles
+* Promoting self-organization within the team
+* Helping the scrum team to avoid or remove impediments to its progress, whether internal or external to the team
+* Facilitating team events to ensure regular progress
+* Educating key stakeholders on Agile and Scrum principles
 
 ### Artifacts (Scrum board, Cards, Epics, Stories, Tasks, Backlogs, Sprint, Increment, etc.)
 	
