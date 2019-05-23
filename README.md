@@ -22,7 +22,7 @@
 #### [Networking](Networking.md)
 
 ## Integration
-#### [Java Enterprise Essentials (Competent)](Java%20Enterpris%20Essentials.md)
+#### [Java Enterprise Essentials (Competent)](Java%20Enterprise%20Essentials.md)
 #### [SOA](SOA.md)
 #### [SOAP Web Services](SOAP%20Web%20Services.md)
 #### [REST Web Services (Competent)](REST%20Web%20Services.md)
