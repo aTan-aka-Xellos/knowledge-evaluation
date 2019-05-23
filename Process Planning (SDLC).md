@@ -1,3 +1,6 @@
+
+# [Engineering Management - Process Planning (SDLC)](https://confluence.softserveinc.com/display/AbilitonKnowledgeModel/Engineering+Management+-+Process+Planning+-+SDLC)
+
 ## [SDLC](https://en.wikipedia.org/wiki/Systems_development_life_cycle)  
 The systems development life cycle, is a term used in systems engineering, information systems and software engineering to describe a process for planning, creating, testing, and deploying an information system.  
 There are usually six stages in this cycle: analysis, design, development and testing, implementation, documentation, and evaluation.
@@ -259,13 +262,86 @@ Grooming is the ongoing process of reviewing product backlog items and checking 
 
 
 ## [Kanban](https://en.wikipedia.org/wiki/Kanban_(development))
+Kanban (Japanese 看板, signboard or billboard) is a lean method to manage and improve work across human systems. This approach aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks.  
+Work items are visualized to give participants a view of progress and process, from start to finish - usually via a Kanban board. Work is pulled as capacity permits, rather than work being pushed into the process when requested.  
+The aim is to provide a visual process-management system which aids decision-making about what, when and how much to produce.  
+
+### Kanban board
+Kanban boards visually depict work at various stages of a process using cards to represent work items and columns to represent each stage of the process. In some cases each column has a work in progress limit. This means that each column can only receive a fixed amount of work items with the aim to encourage focus, and make system constraints evident.  
+
+### [Alternative explanation](https://kanbanblog.com/explained)
+A software development process can be thought of as a pipeline with feature requests entering one end and improved software emerging from the other end.  
+A bottleneck in a pipeline restricts flow. The throughput of the pipeline as a whole is limited to the throughput of the bottleneck.  
+
+Using our development pipeline as an example: if the testers are only able to test 5 features per week whereas the developers and analysts have the capacity to produce 10 features per week, the throughput of the pipeline as a whole will only be 5 features per week because the testers are acting as a bottleneck.  
+
+Kanban reveals bottlenecks dynamically.  
+Limiting work-in-progress reveals the bottlenecks so you can address them.  
+The limits are the critical difference between a kanban board and any other visual storyboard.  
 
 
 ## Others
-[Lean software development](https://en.wikipedia.org/wiki/Lean_software_development)
-[Feature-driven development](https://en.wikipedia.org/wiki/Feature-driven_development)
-[Extreme programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming)
-[Rapid application development (RAD)](https://en.wikipedia.org/wiki/Rapid_application_development)
-[Unified Software Development Process (UP)](https://en.wikipedia.org/wiki/Unified_Process)
-[]()
+### [Lean software development](https://en.wikipedia.org/wiki/Lean_software_development)
+* Eliminate waste
+* Amplify learning
+* Decide as late as possible
+* Deliver as fast as possible
+* Empower the team
+* Build integrity in
+* See the whole
 
+### [Feature-driven development](https://en.wikipedia.org/wiki/Feature-driven_development)
+FDD blends a number of industry-recognized best practices into a cohesive whole. These practices are driven from a client-valued functionality (feature) perspective. Its main purpose is to deliver tangible, working software repeatedly in a timely manner.  
+* Develop overall model - The FDD project starts with a high-level walkthrough of the scope of the system and its context.  
+* Build feature list - Knowledge gathered during the initial modeling is used to identify a list of features by functionally decomposing the domain into subject areas.  
+* Plan by feature
+* Design by feature - A design package is produced for each feature.  
+* Build by feature
+
+Milestones - Since features are small, completing a feature is a relatively small task.  
+
+### [Extreme programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming)
+Extreme Programming Explained describes extreme programming as a software-development discipline that organizes people to produce higher-quality software more productively.  
+
+Activities:
+* Coding - The advocates of XP argue that the only truly important product of the system development process is code.  
+* Testing - Testing is central to extreme programming.  
+* Listening - Programmers must listen to what the customers need the system to do.  
+* Designing - Good design will avoid lots of dependencies within a system.  
+
+Values: 
+* Communication
+* Simplicity
+* Feedback
+* Courage
+* Respect
+
+Practices:
+* Pair programming
+* Planning game
+* Test-driven development
+* Extreme programming practices
+* Continuous integration
+* Refactoring
+* Coding standards
+* Collective code ownership
+* The customer is always available
+* Code the unit test first
+* Leave optimization until last
+* No overtime
+* All code must have unit tests
+* All code must pass all unit tests before it can be released
+
+### [Rapid application development (RAD)](https://en.wikipedia.org/wiki/Rapid_application_development)
+In general, RAD approaches to software development put less emphasis on planning and more emphasis on an adaptive process. Prototypes are often used in addition to or sometimes even in place of design specifications.  
+RAD is especially well suited for (although not limited to) developing software that is driven by user interface requirements.  
+
+### [Rational Unified Process (RUP)](https://en.wikipedia.org/wiki/Rational_Unified_Process)
+RUP is not a single concrete prescriptive process, but rather an adaptable process framework, intended to be tailored by the development organizations and software project teams that will select the elements of the process that are appropriate for their needs.  
+Six best practices:
+* Develop iteratively, with risk as the primary iteration driver[4]
+* Manage requirements
+* Employ a component-based architecture
+* Model software visually
+* Continuously verify quality
+* Control changes
