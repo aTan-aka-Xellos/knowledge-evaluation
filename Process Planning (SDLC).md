@@ -1,12 +1,12 @@
-### [SDLC](https://en.wikipedia.org/wiki/Systems_development_life_cycle)  
+## [SDLC](https://en.wikipedia.org/wiki/Systems_development_life_cycle)  
 The systems development life cycle, is a term used in systems engineering, information systems and software engineering to describe a process for planning, creating, testing, and deploying an information system.  
 There are usually six stages in this cycle: analysis, design, development and testing, implementation, documentation, and evaluation.
 
-### [Software development process](https://en.wikipedia.org/wiki/Software_development_process)
+## [Software development process](https://en.wikipedia.org/wiki/Software_development_process)
  Software development process is the process of dividing software development work into distinct phases to improve design, product management, and project management. 
  It is also known as a software development life cycle.
  
-#### Software development activities:
+### Software development activities:
 * Processes 
 * Requirements 
 * Design 
@@ -18,11 +18,11 @@ There are usually six stages in this cycle: analysis, design, development and te
 * Maintenance
 
 
-### Basics of SDLC models:
-### [Waterfall Concept](https://en.wikipedia.org/wiki/Waterfall_model)
+## Basics of SDLC models:
+## [Waterfall Concept](https://en.wikipedia.org/wiki/Waterfall_model)
 The waterfall model is a relatively linear sequential design approach for certain areas of engineering design. In software development, it tends to be among the less iterative and flexible approaches, as progress flows in largely one direction ("downwards" like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, deployment and maintenance.  
 
-#### Model:
+### Model:
 1. System and software requirements: captured in a product requirements document
 2. Analysis: resulting in models, schema, and business rules
 3. Design: resulting in the software architecture
@@ -31,29 +31,29 @@ The waterfall model is a relatively linear sequential design approach for certai
 6. Operations: the installation, migration, support, and maintenance of complete systems  
 Thus the waterfall model maintains that one should move to a phase only when its preceding phase is reviewed and verified.  
 
-##### Supporting arguments
+#### Supporting arguments
 A further argument for the waterfall model is that it places emphasis on documentation (such as requirements documents and design documents).  
 
 The waterfall model provides a structured approach; the model itself progresses linearly through discrete, easily understandable and explainable phases and thus is easy to understand; it also provides easily identifiable milestones in the development process.  
 
-##### Criticism
+#### Criticism
 Clients may not know exactly what their requirements are before they see working software and so change their requirements, leading to redesign, redevelopment, and retesting, and increased costs.  
 
 Designers may not be aware of future difficulties when designing a new software product or feature.  
 
-### [Agile software development concept](https://en.wikipedia.org/wiki/Agile_software_development)
+## [Agile software development concept](https://en.wikipedia.org/wiki/Agile_software_development)
 Agile software development is an approach to software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams and their customer(s)/end user(s).  
 It advocates adaptive planning, evolutionary development, early delivery, and continual improvement, and it encourages rapid and flexible response to change.  
 
 The term agile was popularized, in this context, by the ]Manifesto for Agile Software Development](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto).  
 
-#### Agile Manifesto values  
+### Agile Manifesto values  
 * Individuals and Interactions over processes and tools
 * Working Software over comprehensive documentation
 * Customer Collaboration over contract negotiation
 * Responding to Change over following a plan  
 
-#### Agile software development principles
+### Agile software development principles
 The Manifesto for Agile Software Development is based on twelve principles:
 
 * Customer satisfaction by early and continuous delivery of valuable software.
@@ -69,14 +69,14 @@ The Manifesto for Agile Software Development is based on twelve principles:
 * Best architectures, requirements, and designs emerge from self-organizing teams
 * Regularly, the team reflects on how to become more effective, and adjusts accordingly  
 
-#### Agile vs. waterfall
+### Agile vs. waterfall
 One of the differences between agile software development methods and waterfall is the approach to quality and testing. In the waterfall model, there is always a separate testing phase after a build phase; however, in agile software development testing is completed in the same iteration as programming.  
 
 Another difference is that traditional "waterfall" software development moves a project through various Software Development Lifecycle (SDLC) phases. One phase is completed in its entirety before moving on to the next phase.  
 
 This iterative approach supports a product rather than a project mindset.  
 
-#### Agile software development practices
+### Agile software development practices
 
 * Acceptance test-driven development (ATDD)
 * Agile modeling
@@ -94,19 +94,42 @@ This iterative approach supports a product rather than a project mindset.
 * Test-driven development (TDD)
 
 
-### Scrum
+## [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))
 
-* Roles and responsibilities
+Scrum is a lightweight, iterative and incremental framework for managing product development.  
+It defines "a flexible, holistic product development strategy where a development team works as a unit to reach a common goal", and enables teams to self-organize by encouraging physical co-location or close online collaboration of all team members, as well as daily face-to-face communication among all team members and disciplines involved.   
+It is designed for teams of three to nine members, who break their work into actions that can be completed within timeboxed iterations, called sprints, no longer than one month and most commonly two weeks, then track progress and re-plan in 15-minute time-boxed stand-up meetings, called daily scrums.  
 
-* Artifacts (Scrum board, Cards, Epics, Stories, Tasks, Backlogs, Sprint, Increment, etc.)
+A key principle of Scrum is the dual recognition that customers will change their minds about what they want or need (often called requirements volatility) and that there will be unpredictable challenges - for which a predictive or planned approach is not suited.  
+
+### Roles and responsibilities
+
+#### Product owner  
+
+The product owner, representing the product's stakeholders and the voice of the customer, is responsible for the product backlog and accountable for maximizing the value that the team delivers. The product owner defines the product in customer-centric terms (typically user stories), adds them to the product backlog, and prioritizes them based on importance and dependencies.  
+This role should not be combined with that of the scrum master.  
+The product owner should not dictate how the team reaches a technical solution, but rather will seek consensus among the team members.  
+This role is crucial and requires a deep understanding of both sides: the business and the engineers (developers) in the scrum team.  
+Communication is a core responsibility of the product owner.  
+
+#### Responsibilities:
+* Organize further meetings to demonstrate the solution to key stakeholders who were not present at a sprint review.
+* Define and announce releases.
+* Communicate delivery and team status.
+* Share progress during governance meetings.
+* Share RAID (Risks, Assumptions, Issues and Dependencies) with stakeholders.
+* Negotiate priorities, scope, funding, and schedule.
+* Ensure that the product backlog is visible, transparent and clear.
+
+### Artifacts (Scrum board, Cards, Epics, Stories, Tasks, Backlogs, Sprint, Increment, etc.)
 	
-* Estimation (Story Points, Velocity, Sprint Burndown Chart, Feature Burnup Chart)
+### Estimation (Story Points, Velocity, Sprint Burndown Chart, Feature Burnup Chart)
 	
-* Ceremonies (Release planning, Sprint planning, Daily Scrum, Sprint demo, Sprint retrospective)
+### Ceremonies (Release planning, Sprint planning, Daily Scrum, Sprint demo, Sprint retrospective)
  	
-### Kanban
+## Kanban
 
-### Others
+## Others
 [Lean software development](https://en.wikipedia.org/wiki/Lean_software_development)
 [Feature-driven development](https://en.wikipedia.org/wiki/Feature-driven_development)
 [Extreme programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming)
