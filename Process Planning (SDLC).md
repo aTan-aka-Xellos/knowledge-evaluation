@@ -22,6 +22,14 @@ There are usually six stages in this cycle: analysis, design, development and te
 
 
 ## Basics of SDLC models:
+
+### Waterfall
+### Agile
+### Spiral
+### V-model
+### Prototyping
+### Incremental 
+
 ## [Waterfall Concept](https://en.wikipedia.org/wiki/Waterfall_model)
 The waterfall model is a relatively linear sequential design approach for certain areas of engineering design. In software development, it tends to be among the less iterative and flexible approaches, as progress flows in largely one direction ("downwards" like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, deployment and maintenance.  
 
