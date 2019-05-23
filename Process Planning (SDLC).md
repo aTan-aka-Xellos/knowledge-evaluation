@@ -150,9 +150,53 @@ One of the ways the scrum master role differs from a project manager is that the
 
 ### Artifacts (Scrum board, Cards, Epics, Stories, Tasks, Backlogs, Sprint, Increment, etc.)
 
+#### Product backlog
+The product backlog is a model of work to be done and contains an ordered list of product requirements that a scrum team maintains for a product.  
+These will define features, bug fixes, non-functional requirements, etc.  
+The product backlog is what will be delivered, ordered into the sequence in which it should be delivered. It is visible to everyone but may only be changed with the consent of the product owner, who is ultimately responsible for ordering product backlog items for the development team to choose.  
+The effort to deliver each item is estimated by the development team in story points, or time.  
+
+The product backlog:
+* Captures requests to modify a product—including new features, replacing old features, removing features, and fixing issues
+* Ensures the development team has work that maximizes business benefit to the product owner
+
+#### Sprint backlog
+The sprint backlog is the list of work the development team must address during the next sprint.  
+The development team should keep in mind its past performance assessing its capacity for the new-sprint.  
+The sprint backlog is the property of the development team, and all included estimates are provided by the development team.  
+Often an accompanying task board is used to see and change the state of the tasks of the current sprint, like to do, in progress and done. 
+Once a sprint backlog is committed, no additional work can be added to the sprint backlog except by the team.  
+
+#### Product increment
+The potentially releasable increment is the sum of all the product backlog items completed during a sprint, integrated with the work of all previous sprints. At the end of a sprint, the increment must be complete, according to the scrum team's definition of "done" (DoD), fully functioning, and in a usable condition regardless of whether the product owner decides to actually release it.
+
+#### Definition of done (DoD)
+The exit-criteria to determine whether a product backlog item is complete. In many cases, the DoD requires that all regression tests be successful.  
+
+
+#### Spike
+A time-boxed period used to research a concept or create a simple prototype.  
+Spikes are often introduced before the delivery of large or complex product backlog items in order to secure budget, expand knowledge, or produce a proof of concept.  
+Unlike sprint commitments, spikes may or may not deliver tangible, shippable, valuable functionality.  
+
 
 ### Estimation (Story Points, Velocity, Sprint Burndown Chart, Feature Burnup Chart)
-	
+
+#### Velocity
+The total effort a team is capable of in a sprint. The number is derived by evaluating the work (typically in user story points) completed in the last sprint. The collection of historical velocity data is a guideline for assisting the team in understanding how much work they can likely achieve in a future sprint. 
+
+#### Sprint burn-down chart
+The sprint burn-down chart is a publicly displayed chart showing remaining work in the sprint backlog.  
+
+#### Release burn-up chart
+The release burn-up chart is a way for the team to provide visibility and track progress toward a release. Updated at the end of each sprint, it shows progress toward delivering a forecast scope. The horizontal axis of the release burn-up chart shows the sprints in a release, while the vertical axis shows the amount of work completed at the end of each sprint (typically representing cumulative story points of work completed).  
+
+#### Story points
+Story points define the effort in a time-box, so they do not change with time. Often use rounded Fibonacci scale.  
+These estimates help the product owner to gauge the timeline and may influence the ordering of product backlog items.  
+
+The value of using story points is that we can reuse them by comparing similar work from previous sprints, but we need to remember that estimates are relative to the team. For instance a 5 for one team, could be a 2 for another having senior developers and higher skills.  
+
 	
 ### Ceremonies (Release planning, Sprint planning, Daily Scrum, Sprint demo, Sprint retrospective)
 
@@ -207,8 +251,14 @@ Guidelines for sprint retrospectives:
 #### Backlog refinement (grooming)
 Grooming is the ongoing process of reviewing product backlog items and checking that they are appropriately prepared and ordered in a way that makes them clear and executable for teams once they enter sprints via the sprint planning activity.
 
+### Limitations
+* Teams whose members are geographically dispersed or part-time
+* Teams whose members have very specialized skills
+* Products with many external dependencies
+* Products that are mature or legacy or with regulated quality control
 
-## Kanban
+
+## [Kanban](https://en.wikipedia.org/wiki/Kanban_(development))
 
 
 ## Others
