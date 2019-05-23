@@ -149,12 +149,67 @@ One of the ways the scrum master role differs from a project manager is that the
 * Educating key stakeholders on Agile and Scrum principles
 
 ### Artifacts (Scrum board, Cards, Epics, Stories, Tasks, Backlogs, Sprint, Increment, etc.)
-	
+
+
 ### Estimation (Story Points, Velocity, Sprint Burndown Chart, Feature Burnup Chart)
 	
+	
 ### Ceremonies (Release planning, Sprint planning, Daily Scrum, Sprint demo, Sprint retrospective)
- 	
+
+#### Sprint
+A sprint (or iteration) is the basic unit of development in Scrum.  
+The duration is fixed in advance for each sprint and is normally between one week and one month, with two weeks being the most common.  
+Each sprint starts with a sprint planning event and ends with a sprint review and sprint retrospective.  
+Scrum emphasizes working product at the end of the sprint that is really done.  
+
+#### Sprint planning
+At the beginning of a sprint, the scrum team holds a sprint planning event to:
+* Mutually discuss and agree on the scope of work that is intended to be done during that sprint
+* Select product backlog items that can be completed in one sprint
+* Prepare a sprint backlog
+* The recommended duration is four hours for a two-week sprint
+
+#### Daily scrum
+Each day during a sprint, the team holds a daily scrum with specific guidelines:
+* All members of the development team come prepared
+* Starts precisely on time even if some development team members are missing
+* Should happen at the same time and place every day
+* Is limited (timeboxed) to fifteen minutes
+* Anyone is welcome, though only development team members should contribute
+* During the daily scrum, each team member typically answers three questions:
+  * What did I complete yesterday?
+  * What do I plan to complete today?
+  * Do I see any impediment that could prevent me or the team from meeting our sprint goal?
+* No detailed discussions should happen during the daily scrum
+
+#### Sprint review
+At the sprint review, the team:
+* Reviews the work that was completed and the planned work that was not completed
+* Presents the completed work to the stakeholders (a.k.a. the demo)
+* Collaborates with the stakeholders on what to work on next
+
+Guidelines for sprint reviews:
+* Incomplete work cannot be demonstrated
+* The recommended duration is two hours for a two-week sprint
+
+#### Sprint retrospective
+At the sprint retrospective, the team:
+* Reflects on the past sprint
+* Identifies and agrees on continuous process improvement actions
+
+Guidelines for sprint retrospectives:
+* Three main questions are asked in the sprint retrospective: 
+  * What went well during the sprint? 
+  * What did not go well? 
+  * What could be improved for better productivity in the next sprint?
+* The recommended duration is one-and-a-half hours for a two-week sprint
+
+#### Backlog refinement (grooming)
+Grooming is the ongoing process of reviewing product backlog items and checking that they are appropriately prepared and ordered in a way that makes them clear and executable for teams once they enter sprints via the sprint planning activity.
+
+
 ## Kanban
+
 
 ## Others
 [Lean software development](https://en.wikipedia.org/wiki/Lean_software_development)
