@@ -1,5 +1,8 @@
 # Knowledge evaluation
 
+[The most common KE mistakes by Anton Shykhmat](https://www.youtube.com/watch?v=QYk26WmxmJ4)
+[Presentation](files/The%20most%20common%20KE%20mistakes.pptx)
+
 ## Engineering Management
 #### [Process Planning (SDLC)](Process%20Planning%20%28SDLC%29.md)
 #### [Estimation](Estimation.md)
