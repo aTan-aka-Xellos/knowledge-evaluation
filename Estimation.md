@@ -47,12 +47,60 @@ When you are first learning to use story points, your team will need to establis
 Often Fibonacci prefer over, say, T-shirt sizing or growing exponentially (4/8/16/32/64/128/256, etc.) because we humans are good at base ten. When we get out of that range, even if we are in it with, say, xs, s, m, l, xl—it becomes confusing.  
 
 ### Estimates, Targets, and Commitments 
+The most optimistic prediction that has a non-zero probability of coming true.  
+An estimate is a prediction of how long a project will take or how much it will cost.  
+An estimate is a rough measure of how long it will take to complete a task in the future. When you give estimates, you are predicting the future.
+
+Target is a description of a desirable business objective.
+A target is a goal. “We should have that finished by the end of the month,” is a target. It may not take the whole month, and in fact you may working on several other things in the month. But your goal is to have it done by then.  
+
+Commitment is a promise to deliver defined functionality at a specific level of quality by a certain date.  
+A commitment can be the same as the estimate, or it can be more aggressive or more conservative than the estimate.  
+A commitment is more of a promise. “We will have that released by the end of the month.” Now you are committed.  
 
 ### Overestimate vs Underestimate 
+The penalty for underestimation is more severe than the penalty for overestimation.  
 
-### Decomposition and Recomposition 
+Work will expand to fill available time.  
+Desire to instill a sense of urgency in the development team.  
+vs  
+Reduced effectiveness of project plans.  
+Statistically reduced chance of on-time completion.  
+Poor technical foundation leads to worse-than-nominal results.  
+Destructive late-project dynamics make the project worse than nominal.  
 
-### Analogy-based estimations 
+### Fundamental Estimation Techniques
+
+#### Decomposition and Recomposition 
+Decomposition by Feature or Task.  
+Decomposition is the practice of separating an estimate into multiple pieces, estimating each piece individually, and then recombining the individual estimates into an aggregate estimate.  
+Decomposition is a cornerstone estimation practice—as long as you watch out for a few pitfalls.  
+
+__The Law of Large Numbers__  
+If you create one big estimate, the estimate's error tendency will be completely on the high side or completely on the low side. But if you create several smaller estimates, some of the estimation errors will be on the high side, and some will be on the low side. The errors will tend to cancel each other out to some degree.
+
+#### Analogy-based estimations 
+Here is a basic estimation by analogy process that will produce better results:
+1. Get detailed size, effort, and cost results for a similar previous project. If possible, get the information decomposed by feature area, by work breakdown structure (WBS) category, or by some other decomposition scheme.
+2. Compare the size of the new project piece-by-piece to the old project.
+3. Build up the estimate for the new project's size as a percentage of the old project's size.
+4. Create an effort estimate based on the size of the new project compared to the size of the previous project.
+5. Check for consistent assumptions across the old and new projects.  
+
+Tip: Estimate new projects by comparing them to similar past projects, preferably decomposing the estimate into at least five pieces. 
+ 
+#### Estimation by Analogy 
+In proxy-based estimation, you first identify a proxy that is correlated with what you really want to estimate and that is easier to estimate or count (or available earlier in the project) than the quantity you're ultimately interested in.   
+If you want to estimate a number of test cases, you might find that the count of the number of requirements is correlated with the number of test cases.  
+
+#### Individual Expert Judgment
+To create the task-level estimates, have the people who will actually do the work create the estimates.  
+If your project is still in the wide part of the Cone of Uncertainty (that is, specific tasks haven't yet been identified or assigned to individuals), the estimate should be created by an expert estimator or by the most expert development, quality assurance, and documentation staff available.  
+
+#### Expert Judgment in Groups 
+* Have each team member estimate pieces of the project individually, and then meet to compare your estimates
+* Don't just average your estimates and accept that 
+* Arrive at a consensus estimate that the whole group accepts 
 
 ### [Wall estimation](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)#wall-estimation)
 ![wass](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/images/hh765979.wall2%28vs.120%29.png)
@@ -72,3 +120,4 @@ The cone demonstrates that we have the most uncertainty at the beginning of any 
 ![Cone](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/images/hh765979.coneofuncertainty%28vs.120%29.png)
 
 ### Source of Estimation Errors 
+
