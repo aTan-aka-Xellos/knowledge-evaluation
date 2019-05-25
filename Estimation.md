@@ -121,3 +121,11 @@ The cone demonstrates that we have the most uncertainty at the beginning of any 
 
 ### Source of Estimation Errors 
 
+Estimation error creeps into estimates from four generic sources:
+
+* Inaccurate information about the project being estimated
+* Inaccurate information about the capabilities of the organization that will perform the project
+* Too much chaos in the project to support accurate estimation (that is, trying to estimate a moving target)
+* Inaccuracies arising from the estimation process itself
+
+
