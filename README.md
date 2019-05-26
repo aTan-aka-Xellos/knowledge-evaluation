@@ -3,17 +3,17 @@
 [The most common KE mistakes by Anton Shykhmat](https://www.youtube.com/watch?v=QYk26WmxmJ4)  
 [Presentation](files/The%20most%20common%20KE%20mistakes.pptx)
 
-## Engineering Management
-#### [Process Planning (SDLC)](Process%20Planning%20%28SDLC%29.md)
-#### [Estimation](Estimation.md)
 
+## Engineering Management
+#### [Process Planning (SDLC)](Process%20Planning%20%28SDLC%29.md) (Done)
+#### [Estimation](Estimation.md) (Done)
 
 ## Requirements
-#### [Software Requirements Engineering](Software%20Requirements%20Engineering.md)
+#### [Software Requirements Engineering](Software%20Requirements%20Engineering.md) (Done)
 
 ## Design
-#### [OOD (Competent)](OOD.md)
-#### [DB Design](DB%20Design.md)
+#### [OOD (Competent)](OOD.md) (In progress)
+#### [DB Design](DB%20Design.md) (Done)
 #### [Modeling](Modeling.md)
 #### [Security](Security.md)
 #### [Algorithms](Algorithms.md)
