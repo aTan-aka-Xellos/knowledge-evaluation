@@ -165,6 +165,7 @@ According to Date's definition, a table is in first normal form if and only if i
 * All columns are regular [i.e. rows have no hidden components such as row IDs, object IDs, or hidden timestamps].
 
 #### Second normal form (2NF)
+http://alexvolkov.ru/database-normalization-second-normal-form.html
 
 All fields in the table depends only and fully on a primary key, but not on it's part.
 All non-key (including foreign) fields should depends on primary key only (and not on other fields).
@@ -177,6 +178,7 @@ A non-prime attribute of a relation is an attribute that is not a part of any ca
 Put simply, a relation is in 2NF if it is in 1NF and every non-prime attribute of the relation is dependent on the whole of every candidate key.  
 
 #### Third normal form (3NF) 
+http://alexvolkov.ru/database-normalization-third-normal-form.html
 
 All fields should depends only on primary key and not on other fields.
 In other words - if change in one non-key field require change in another field - 3NF is broken. 
