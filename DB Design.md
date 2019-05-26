@@ -123,5 +123,59 @@ Relationship notations
 
 ## Understanding normalization concept
 
+Database normalization is the process of structuring a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity.  
+
+Normalization entails organizing the columns (attributes) and tables (relations) of a database to ensure that their dependencies are properly enforced by database integrity constraints. It is accomplished by applying some formal rules either by a process of synthesis (creating a new database design) or decomposition (improving an existing database design).  
+
+A fully normalized database allows its structure to be extended to accommodate new types of data without changing existing structure too much. As a result, applications interacting with the database are minimally affected.  
+Normalized relations, and the relationship between one normalized relation and another, mirror real-world concepts and their interrelationships.  
+
+When an attempt is made to modify (update, insert into, or delete from) a relation, the following undesirable side-effects may arise in relations that have not been sufficiently normalized:  
+* Update anomaly. The same information can be expressed on multiple rows.  
+* Insertion anomaly. There are circumstances in which certain facts cannot be recorded at all. NULL in field.  
+* Deletion anomaly. Under certain circumstances, deletion of data representing certain facts necessitates deletion of data representing completely different facts.  
+
+Normalization is a database design technique, which is used to design a relational database table up to higher normal form.  
+The process is progressive, and a higher level of database normalization cannot be achieved unless the previous levels have been satisfied.  
+
+### Normal forms
+
+![normal_forms](files/Normal_forms.jpg)
+
+Unnormalized form (UNF)
+is a simple database data model lacking the efficiency of database normalization.  
+
+#### First normal form (1NF)  
+Is a property of a relation in a relational database.  
+A relation is in first normal form if and only if the domain of each attribute contains only atomic (indivisible) values, and the value of each attribute contains only a single value from that domain.  
+First normal form enforces these criteria:  
+* Eliminate repeating groups in individual tables
+* Create a separate table for each set of related data[definition needed]
+* Identify each set of related data with a primary key
+
+According to Date's definition, a table is in first normal form if and only if it is "isomorphic to some relation", which means, specifically, that it satisfies the following five conditions:
+* There's no top-to-bottom ordering to the rows.
+* There's no left-to-right ordering to the columns.
+* There are no duplicate rows.
+* Every row-and-column intersection contains exactly one value from the applicable domain (and nothing else).
+* All columns are regular [i.e. rows have no hidden components such as row IDs, object IDs, or hidden timestamps].
+
+#### Second normal form (2NF)
+
+To qualify for second normal form a relation must:
+not have any non-prime attribute that is dependent on any proper subset of any candidate key of the relation.  
+A non-prime attribute of a relation is an attribute that is not a part of any candidate key of the relation.  
+
+Put simply, a relation is in 2NF if it is in 1NF and every non-prime attribute of the relation is dependent on the whole of every candidate key.  
+
+#### Third normal form (3NF) 
+
+Is a normal form that is used in normalizing a database design to reduce the duplication of data and ensure referential integrity by ensuring that:  
+No non-prime (non-key) attribute is transitively dependent of any key i.e. no non-prime attribute depends on other non-prime attributes. All the non-prime attributes must depend on the primary key only.
+
+### Denormalization
+
+Denormalization is a strategy used on a previously-normalized database to increase performance.   
+In computing, denormalization is the process of trying to improve the read performance of a database, at the expense of losing some write performance, by adding redundant copies of data or by grouping data.  
 
 ## Data Integrity
