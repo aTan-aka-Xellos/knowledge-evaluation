@@ -84,7 +84,44 @@ This usually means that completed transactions (or their effects) are recorded i
 
 Implementation: Locking vs multiversioning
 
-* Relationships (One-to-One, One-to-Many)
-* Understanding ER notation
-* Understanding normalization concept
-* Data Integrity
+## Relationships (One-to-One, One-to-Many)
+https://support.airtable.com/hc/en-us/articles/218734758-A-beginner-s-guide-to-many-to-many-relationships
+
+__One-to-One__ (1-1) relationship is defined as the relationship between two tables where both the tables should be associated with each other based on only one matching row.  
+This relationship can be created using Primary key-Unique foreign key constraints.  
+With One-to-One Relationship in SQL Server, for example, a person can have only one passport.  
+
+__One-to-Many__ relationship is defined as a relationship between two tables where a row from one table can have multiple matching rows in another table.   
+This relationship can be created using Primary key-Foreign key relationship.  
+For example, if you have a list of works of art and a list of museums, each work of art can only be in one museum at a time, but each museum can have many works of art.  
+
+__Many-to-Many__ - For example, think of A as Authors, and B as Books. An Author can write several Books, and a Book can be written by several Authors.
+
+## Understanding ER notation
+Entity-relationship diagrams (ERD) are essential to modeling anything from simple to complex databases.  
+ER diagrams are used to model and design relational databases, in terms of logic and business rules (in a logical data model) and in terms of the specific technology to be implemented (in a physical data model.)  
+
+Components and features
+* Entity
+  * Strong entity
+  * Weak entity
+  * Associative entity
+* Relationship 
+  * Relationship
+  * Weak relationship
+* Attribute 
+  * Attribute
+  * Multivalued attribute
+  * Derived attribute
+	
+Physical diagram symbols
+* Fields	
+* Keys
+* Types
+  
+Relationship notations
+
+## Understanding normalization concept
+
+
+## Data Integrity
