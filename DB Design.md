@@ -192,4 +192,22 @@ No non-prime (non-key) attribute is transitively dependent of any key i.e. no no
 Denormalization is a strategy used on a previously-normalized database to increase performance.   
 In computing, denormalization is the process of trying to improve the read performance of a database, at the expense of losing some write performance, by adding redundant copies of data or by grouping data.  
 
-## Data Integrity
+## [Data Integrity](https://database.guide/what-is-data-integrity)
+The term data integrity refers to the accuracy and consistency of data.  
+
+For example, a user could accidentally try to enter a phone number into a date field. If the system enforces data integrity, it will prevent the user from making these mistakes.  
+
+Some more examples of where data integrity is at risk:
+
+* A user tries to enter a date outside an acceptable range.
+* A user tries to enter a phone number in the wrong format.
+* A bug in an application attempts to delete the wrong record.
+* While transferring data between two databases, the network went down.
+* A hacker manages to steal all user passwords from the database.
+
+In the database world, data integrity is often placed into the following types:
+
+* Entity integrity
+* Referential integrity
+* Domain integrity
+* User-defined integrity
