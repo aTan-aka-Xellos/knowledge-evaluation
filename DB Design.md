@@ -146,6 +146,7 @@ Unnormalized form (UNF)
 is a simple database data model lacking the efficiency of database normalization.  
 
 #### First normal form (1NF)  
+
 Is a property of a relation in a relational database.  
 A relation is in first normal form if and only if the domain of each attribute contains only atomic (indivisible) values, and the value of each attribute contains only a single value from that domain.  
 First normal form enforces these criteria:  
@@ -162,6 +163,8 @@ According to Date's definition, a table is in first normal form if and only if i
 
 #### Second normal form (2NF)
 
+All fields in the table depends only and fully on a primary key, but not on it's part.
+
 To qualify for second normal form a relation must:
 not have any non-prime attribute that is dependent on any proper subset of any candidate key of the relation.  
 A non-prime attribute of a relation is an attribute that is not a part of any candidate key of the relation.  
@@ -169,6 +172,8 @@ A non-prime attribute of a relation is an attribute that is not a part of any ca
 Put simply, a relation is in 2NF if it is in 1NF and every non-prime attribute of the relation is dependent on the whole of every candidate key.  
 
 #### Third normal form (3NF) 
+
+All fields should depends on primary key only and not on other fields.
 
 Is a normal form that is used in normalizing a database design to reduce the duplication of data and ensure referential integrity by ensuring that:  
 No non-prime (non-key) attribute is transitively dependent of any key i.e. no non-prime attribute depends on other non-prime attributes. All the non-prime attributes must depend on the primary key only.
