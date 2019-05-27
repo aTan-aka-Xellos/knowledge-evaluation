@@ -4,6 +4,8 @@
 __Qualification Requirements Overview:__ 
 Basic networking knowledge, standards
 
+Interesting:  
+https://www.youtube.com/watch?v=aXYJlizk3CQ  
 
 ### Internet its component and architecture
 
