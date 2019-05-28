@@ -99,8 +99,49 @@ __Competent__
 ## Architectural Patterns: Layered Architecture
 
 
-## Architectural Patterns: MVC
+## [Architectural Patterns: MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 
+https://blogs.msdn.microsoft.com/erwinvandervalk/2009/08/14/the-difference-between-model-view-viewmodel-and-other-separated-presentation-patterns/
+Translation:
+https://habr.com/ru/company/mobileup/blog/313538/
+
+MVC architectural pattern follows an elementary idea – we must separate the responsibilities in any application on the following basis:
+
+* Model: Handles data and business logic.
+* View: Presents the data to the user whenever asked for.
+* Controller: Entertains user requests and fetch necessary resources.
+
+What are those Models, Views and Controllers:
+
+### Model 
+The model typically is the data of your application and the logic to retrieve and persist that data. Often, this is a domain model that can be based on a database or the results from web services. In some cases, that domain model maps perfectly to what you see on the screen, but in other cases it has to be adapted, aggregated or extended to be usable.  
+
+### View 
+The View was responsible for drawing the UI on the screen. Without windows or controls, that meant drawing, boxes, buttons, input fields, etc on the screen. The View can also monitor the model and display any data in it or update itself if the data changes.
+
+### Controller 
+The controller is responsible for handling the User Input and then updating the Model or the View. So if the user is interacts with the application, IE: presses a button on the keyboard, moves the mouse, the controller is notified of that user gesture and decides what to do with it. Maybe it should update the view, maybe it should update the model.   
+
+Goals of MVC:
+* Simultaneous development
+* Code reuse
+
+Advantages:
+* Simultaneous development
+* High cohesion 
+* Loose coupling
+* Ease of modification
+* Multiple views for a model
+Disadvantages:
+* Code navigability
+* Multi-artifact consistency
+* Excessive boilerplate
+* Pronounced learning curve
+
+Variations:
+* Model View Presenter 
+* Presentation Model (Martin Fowler)
+* Model View ViewModel (databinding)
 
 ## Architectural Patterns: IoC
 
