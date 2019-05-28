@@ -59,6 +59,8 @@ but takes advantage of the re-use of an abstraction (generally a good thing).
 How tied together are the state and behavior of a class?  
 Does the abstraction model a cohesive, related, integrated thing in the problem space?  
 
+In computer programming, cohesion refers to the degree to which the elements inside a module belong together. In one sense, it is a measure of the strength of relationship between the methods and data of a class and some unifying purpose or concept served by that class. In another sense, it is a measure of the strength of relationship between the class’s methods and data themselves.
+
 * Sufficiency
 Does the class capture enough of the details of the thing being modeled to be useful?  
 
@@ -101,9 +103,9 @@ __Competent__
 
 ## [Architectural Patterns: MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 
-https://blogs.msdn.microsoft.com/erwinvandervalk/2009/08/14/the-difference-between-model-view-viewmodel-and-other-separated-presentation-patterns/
-Translation:
-https://habr.com/ru/company/mobileup/blog/313538/
+https://blogs.msdn.microsoft.com/erwinvandervalk/2009/08/14/the-difference-between-model-view-viewmodel-and-other-separated-presentation-patterns/  
+Translation:  
+https://habr.com/ru/company/mobileup/blog/313538/  
 
 MVC architectural pattern follows an elementary idea – we must separate the responsibilities in any application on the following basis:
 
@@ -149,4 +151,66 @@ Variations:
 ## SOLID principles
 
 
-## Anti-patterns
+## [Anti-patterns](https://en.wikipedia.org/wiki/Anti-pattern)
+
+An anti-pattern is a common response to a recurring problem that is usually ineffective and risks being highly counterproductive.
+
+Software design:
+* Big ball of mud: A system with no recognizable structure
+* Gold plating: Continuing to work on a task or project well past the point at which extra effort is not adding value
+* Abstraction inversion: Not exposing implemented functionality required by callers of a function/method/constructor, so that the calling code awkwardly re-implements the same functionality in terms of those calls
+* Interface bloat: Making an interface so powerful that it is extremely difficult to implement
+* Inner-platform effect: A system so customizable as to become a poor replica of the software development platform
+
+Object-oriented programming:
+* Circular dependency: Introducing unnecessary direct or indirect mutual dependencies between objects or software modules
+* Constant interface: Using interfaces to define constants
+* God object: Concentrating too many functions in a single part of the design (class)
+* Call super: Requiring subclasses to call a superclass's overridden method
+* Circle-ellipse problem: Subtyping variable-types on the basis of value-subtypes
+* Object cesspool: Reusing objects whose state does not conform to the (possibly implicit) contract for re-use
+* Poltergeists: Objects whose sole purpose is to pass information to another object
+* Sequential coupling: A class that requires its methods to be called in a particular order
+* Yo-yo problem: A structure (e.g., of inheritance) that is hard to understand due to excessive fragmentation
+
+Programming:
+* Accidental complexity: Programming tasks which could be eliminated with better tools
+* Action at a distance: Unexpected interaction between widely separated parts of a system
+* Boat anchor: Retaining a part of a system that no longer has any use
+* Busy waiting: Consuming CPU while waiting for something to happen
+* Caching failure: Forgetting to clear a cache that holds a negative result (error) after the error condition has been corrected
+* Cargo cult programming: Using patterns and methods without understanding why
+* Error hiding
+* Hard code: Embedding assumptions about the environment of a system in its implementation
+* Lasagna code: Programs whose structure consists of too many layers of inheritance
+* Spaghetti code: Programs whose structure is barely comprehensible, especially because of misuse of code structures
+* Magic numbers
+* Magic strings
+* Repeating yourself
+
+Methodological:
+* Copy and paste programming
+* Every Fool Their Own Tool
+* Golden hammer
+* Improbability factor: Assuming that it is improbable that a known error will occur
+* Reinventing the wheel 
+* Premature optimization
+
+Configuration management:
+* Dependency hell
+
+Organizational:
+* Analysis paralysis
+* Bleeding edge: Operating with cutting-edge technologies
+* Cash cow: A profitable legacy product that often leads to complacency about new products
+* Design by committee: The result of having many contributors to a design, but no unifying vision
+* Micromanagement
+* Mushroom management: Keeping employees "in the dark and fed manure"
+
+Project management:
+* Ninety-ninety rule: Tendency to underestimate the amount of time to complete a project when it is "nearly done"
+* Death march: A project whose staff, while expecting it to fail, are compelled to continue, often with much overwork, by management which is in denial
+* Overengineering: Spending resources making a project more robust and complex than is needed
+* Scope creep: Uncontrolled changes or continuous growth in a project's scope, or adding new features to the project after the original requirements have been drafted and accepted
+* Smoke and mirrors: Demonstrating unimplemented functions as if they were already implemented
+
