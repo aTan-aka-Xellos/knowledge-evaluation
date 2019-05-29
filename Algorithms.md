@@ -45,9 +45,9 @@ An algorithm is said to be of polynomial time if its running time is upper bound
 
 ## Array sorting methods(bubble sort, quick sort, merge sort)
 
-### Bubble sort
+### [Bubble sort](https://www.geeksforgeeks.org/bubble-sort)
 Based on the idea of repeatedly comparing pairs of adjacent elements and then swapping their positions if they exist in the wrong order.  
-### Merge sort 
+### [Merge sort](https://www.geeksforgeeks.org/merge-sort)
 Is a divide-and-conquer algorithm based on the idea of breaking down a list into several sub-lists until each sublist consists of a single element and merging those sublists in a manner that results into a sorted list.  
 
 Idea:
@@ -57,16 +57,20 @@ Idea:
 
 While comparing two sublists for merging, the first element of both lists is taken into consideration. While sorting in ascending order, the element that is of a lesser value becomes a new element of the sorted list. This procedure is repeated until both the smaller sublists are empty and the new combined sublist comprises all the elements of both the sublists.  
 
-### Quick sort
+### [Quick sort](https://www.geeksforgeeks.org/quick-sort)
 Quick sort is based on the divide-and-conquer approach based on the idea of choosing one element as a pivot element and partitioning the array around it such that: Left side of pivot contains all the elements that are less than the pivot element Right side contains all elements greater than the pivot.  
 
 It reduces the space complexity and removes the use of the auxiliary array that is used in merge sort. Selecting a random pivot in an array results in an improved time complexity in most of the cases.  
 
 
+## Binary search algorithm	
+Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.  
+
+The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n).  
+
+
 ## Tree structure(construction, traversal)
 
-
-## Binary search algorithm	
 
 
 ## Hash table(creating, collisions)
