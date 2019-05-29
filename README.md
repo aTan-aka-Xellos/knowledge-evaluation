@@ -16,16 +16,16 @@
 #### [DB Design](DB%20Design.md) (Done)
 #### [Modeling](Modeling.md)
 #### [Security](Security.md)
-#### [Algorithms](Algorithms.md)
+#### [Algorithms](Algorithms.md) (In progress)
 
 ## Construction
 #### [Programming language (Competent)](Programming%20language.md)
-#### [Refactoring](Refactoring.md)
+#### [Refactoring](Refactoring.md) 
 #### [Concurrency](Concurrency.md)
 #### [Networking](Networking.md)
 
 ## Integration
-#### [Java Enterprise Essentials (Competent)](Java%20Enterprise%20Essentials.md)
+#### [Java Enterprise Essentials (Competent)](Java%20Enterprise%20Essentials.md) (In progress)
 #### [SOA](SOA.md)
 #### [SOAP Web Services](SOAP%20Web%20Services.md)
 #### [REST Web Services (Competent)](REST%20Web%20Services.md)
