@@ -71,6 +71,41 @@ The idea of binary search is to use the information that the array is sorted and
 
 ## Tree structure(construction, traversal)
 
+The algorithm finds data by repeatedly making choices at decision points called __nodes__. A node can have as few as two branches (also called children), or as many as several dozen.  
+
+In a tree, records are stored in locations called __leaves__.  
+This name derives from the fact that records always exist at end points; there is nothing beyond them.  
+
+The starting point is called the __root__. The maximum number of children per node is called the __order of the tree__.  
+The maximum number of access operations required to reach the desired record is called the __depth__.
+
+In some trees, the order is the same at every node and the depth is the same for every record. This type of structure is said to be __balanced__.  
+Other trees have varying numbers of children per node, and different records might lie at different depths. In that case, the tree is said to have an __unbalanced__ or __asymmetrical__ structure. 
+
+### Binary Tree
+
+A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.  
+
+A Binary Tree node contains following parts:
+1. Data
+2. Pointer to left child
+3. Pointer to right child
+
+### Traversal
+
+__Level Order Tree Traversal__
+
+Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root, and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.  
+
+__Depth-first search (DFS)__
+
+The algorithm starts at the root node and explores as far as possible along each branch before backtracking.  
+
+![example](https://www.geeksforgeeks.org/wp-content/uploads/2009/06/tree12.gif)
+Depth First Traversals:
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1
 
 
 ## Hash table(creating, collisions)
