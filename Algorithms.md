@@ -26,7 +26,7 @@ Types of complexity:
 * Factorial time O(n!)
 
 #### Some examples:  
-![algo_complexity](algo_complexity.jpg)
+![algo_complexity](files/algo_complexity.jpg)
 
 ### Analysis of Algorithms
 The term analysis of algorithms is used to describe approaches to the study of the performance of algorithms. In this course we will perform the following types of analysis:
