@@ -126,6 +126,7 @@ Capability to pass Oracle Certified Professional Java Programmer Exam.
 
 ### Collections
 
+![collections](https://3.bp.blogspot.com/-LUCDWSG5qXE/Uy_ee5bIR5I/AAAAAAAAAZA/oY1hR_1fcwk/s1600/Java+collection+cheat+sheet.PNG)
 
 ### Using the Collections Framework
 
