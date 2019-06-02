@@ -163,8 +163,24 @@ This makes queue as __FIFO(First in First Out)__ data structure, which means tha
 
 #### Applications of Queue
 * Serving requests on a single shared resource, like a printer, CPU task scheduling etc.
-* In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.
+* In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.                           
 * Handling of interrupts in real-time systems. The interrupts are handled in the same order as they arrive i.e First come first served.
 
+### [Linked list](https://www.studytonight.com/data-structures/introduction-to-linked-list.php)
+Сonsists of group of nodes in a sequence.
+Each node holds its own data and the address of the next node hence forming a chain like structure.
 
+#### Advantages
+* They are a dynamic in nature which allocates the memory when required.
+* Insertion and deletion operations can be easily implemented.
+* Stacks and queues can be easily executed.
+* Linked List reduces the access time.
 
+#### Disadvantages
+* The memory is wasted as pointers require extra memory for storage.
+* No element can be accessed randomly; it has to access each node sequentially.
+* Reverse Traversing is difficult in linked list.
+
+#### Applications of Linked Lists
+* Linked lists are used to implement stacks, queues, graphs, etc.
+* Linked lists let you insert elements at the beginning and end of the list.
