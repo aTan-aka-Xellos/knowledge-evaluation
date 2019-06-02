@@ -31,6 +31,13 @@ Knowledge of java language specification and main packages is required.
 
 ### Statics
 
+https://docs.oracle.com/javase/tutorial/java/IandI/override.html
+https://www.geeksforgeeks.org/can-we-overload-or-override-static-methods-in-java
+Static method cannot be overrided by child. It __hide__ method from parent and have it's own unique static method.
+
+The distinction between hiding a static method and overriding an instance method has important implications:
+* The version of the overridden instance method that gets invoked is the one in the subclass.
+* The version of the hidden static method that gets invoked depends on whether it is invoked from the superclass or the subclass.
 
 ### Stack and Heap
 
@@ -85,12 +92,34 @@ Knowledge of java language specification and main packages is required.
 ### Using the @SafeVarargs annotation
 
 
-### Java 8 features 
+## Java 8 features 
 
 
-### Default and Static Methods
+### [Default and Static Methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
 
-### Java 10 features
+https://www.geeksforgeeks.org/default-methods-java  
+
+If a new method is to be added in an interface, then its implementation code has to be provided in the class implementing the same interface. To overcome this issue, Java 8 has introduced the concept of default methods which allow the interfaces to have methods with implementation without affecting the classes that implement the interface.  
+
+The default methods were introduced to provide backward compatibility so that existing intefaces can use the lambda expressions without implementing the methods in the implementation class. Default methods are also known as __defender methods__ or __virtual extension methods.__
+
+In case both the implemented interfaces contain deafult methods with same method signature, the implementing class should explicitly specify which default method is to be used or it should override the default method.  
+
+Important Points:
+* Interfaces can have default methods with implementation from java 8 onwards.
+* Interfaces can have static methods as well similar to static method of classes.
+* Default methods were introduced to provide backward compatibility for old interfaces so that they can have new methods without effecting existing code.
+
+
+https://www.geeksforgeeks.org/static-method-in-interface-in-java
+Unlike other methods in Interface, these static methods contain the complete definition of the function and since the definition is complete and the method is static, therefore these methods cannot be overridden or changed in the implementation class.  
+
+Similar to Default Method in Interface, the static method in an interface can be defined in the interface, but these methods cannot be overridden in Implementation Classes.  
+
+To use a static method, Interface name should be instantiated with it, as it is __a part of the Interface only.__  
+
+
+## Java 10 features
 
 ### Local-Variable Type Inference
 
@@ -230,11 +259,30 @@ Steps:
 ### Stream IO in Java 7
 
 
-### Java 8 features
+## Java 8 features
 
 ### Lambdas and Functional Interfaces
 
-### Method references
+### [Method references](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
+The method reference is semantically the same as the lambda expression.  
+
+
+![MethodReference](files/MethodReference.jpg)
+
+Lambda:  
+Arrays.sort(rosterAsArray,
+    (a, b) -> Person.compareByAge(a, b)
+);
+
+Because this lambda expression invokes an existing method, you can use a method reference instead of a lambda expression:  
+
+Arrays.sort(rosterAsArray, Person::compareByAge);
+
+Each has the following characteristics:  
+* Its formal parameter list is copied from Comparator<Person>.compare, which is (Person, Person).
+* Its body calls the method Person.compareByAge.
+  
+
 
 ### Stream API
 
@@ -242,6 +290,6 @@ Steps:
 
 ### New Date API
 
-### Java 9 features
+## Java 9 features
 
 ### Java Platform Module System
