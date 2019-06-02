@@ -110,6 +110,29 @@ Depth First Traversals:
 
 ## Hash table(creating, collisions)
 
+### Hash function
+A hash function is any function that can be used to map data of arbitrary size onto data of a __fixed size__.  
+Hash functions accelerate table or database lookup by detecting duplicated records in a large file. One such application is finding similar stretches in DNA sequences. They are also useful in cryptography.   
+
+### Collision
+Collision or clash is a situation that occurs when two distinct pieces of data have the same hash value, checksum, fingerprint, or cryptographic digest.  
+When we have 2 inputs x and y, for hash-function H, where H(x)=H(y)
+
+HashMap doesn’t allow duplicate keys but allows duplicate values.  
+Allows 'null' as key (only once as any other keys).  
+
+Internally HashMap contains an array of Node and a node is represented as a class which contains 4 fields :
+1. int hash
+2. K key
+3. V value
+4. Node next
+
+* Initial Capacity - is the capacity of HashMap instance when it is created
+* Load Factor - is a measure that when rehashing should be done
+
+### Time complexity of HashMap
+
+HashMap provides constant time complexity for basic operations, get and put, if hash function is properly written and it disperses the elements properly among the buckets. Iteration over HashMap depends on the capacity of HashMap and number of key-value pairs. Basically, it is directly proportional to the capacity + size.  
 
 ## Stack, queue, linked list(construction, understanding, usage)
 
