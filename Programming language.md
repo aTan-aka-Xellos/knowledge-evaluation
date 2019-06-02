@@ -124,12 +124,37 @@ Capability to pass Oracle Certified Professional Java Programmer Exam.
 
 ### Overriding hashCode() and equals()
 
-### Collections
+### [Collections](https://docs.oracle.com/javase/tutorial/collections/TOC.html)
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
 
 ![collections](https://3.bp.blogspot.com/-LUCDWSG5qXE/Uy_ee5bIR5I/AAAAAAAAAZA/oY1hR_1fcwk/s1600/Java+collection+cheat+sheet.PNG)
 
-## Map
+
+![performance](http://i.imgur.com/gb66dmb.png)
+
+## [Map](https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html)
+https://habr.com/ru/post/128017  
 ![Map](https://habrastorage.org/storage1/4e3e57f4/aaa0b3fd/c697a3d8/5108f778.png)
+
+A Map is an object that maps keys to values. A map cannot contain duplicate keys: Each key can map to at most one value. It models the mathematical function abstraction. The Map interface includes methods for basic operations (such as put, get, remove, containsKey, containsValue, size, and empty), bulk operations (such as putAll and clear), and collection views (such as keySet, entrySet, and values).  
+
+The Java platform contains three general-purpose Map implementations: HashMap, TreeMap, and LinkedHashMap.  
+
+### HashMap
+
+#### [Collisions](https://www.geeksforgeeks.org/internal-working-of-hashmap-java)
+
+In case of hash collision entry objects are stored as a node in a linked-list and equals() method is used to compare keys. That comparison to find the correct key with in a linked-list is a linear operation so in a worst case scenario the complexity becomes O(n).
+To address this issue, Java 8 hash elements use balanced trees instead of linked lists after a certain threshold is reached.
+
+#### [get() with collisions](https://www.geeksforgeeks.org/internal-working-of-hashmap-java)
+Steps:
+
+1. Calculate hash code of Key {“sachin”}. It will be generated as 115.
+2. Calculate index by using index method it will be 3.
+3. Go to index 3 of array and compare first element’s key with given key. If both are equals then return the value, otherwise check for next element if it exists.
+
 
 ### Using the Collections Framework
 
