@@ -16,10 +16,10 @@
 #### [DB Design](DB%20Design.md) (Done)
 #### [Modeling](Modeling.md)
 #### [Security](Security.md)
-#### [Algorithms](Algorithms.md) (In progress)
+#### [Algorithms](Algorithms.md) (Done)
 
 ## Construction
-#### [Programming language (Competent)](Programming%20language.md)
+#### [Programming language (Competent)](Programming%20language.md) (In progress)
 #### [Refactoring](Refactoring.md) 
 #### [Concurrency](Concurrency.md)
 #### [Networking](Networking.md)
