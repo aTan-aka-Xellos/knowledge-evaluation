@@ -128,12 +128,44 @@ Capability to pass Oracle Certified Professional Java Programmer Exam.
 
 https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
 
+Collections extended by List (LinkedList, ArrayList, Vector), Queue (LinkedList, PriorityQueue) and Set (HashSet, TreeSet, LinkedHashSet).  
 ![collections](https://3.bp.blogspot.com/-LUCDWSG5qXE/Uy_ee5bIR5I/AAAAAAAAAZA/oY1hR_1fcwk/s1600/Java+collection+cheat+sheet.PNG)
 
 
 ![performance](http://i.imgur.com/gb66dmb.png)
 
+__Some highlights:__
+
+The java.util.concurrent package contains several collections implementations, which are thread-safe but not governed by a single exclusion lock.  
+
+The Collections class (as opposed to the Collection interface), provides static methods that operate on or return collections, which are known as Wrapper implementations.  
+
+
+
+#### Interfaces  
+* The first tree starts with the Collection interface, which provides for the basic functionality used by all collections, such as add and remove methods. Its subinterfaces — Set, List, and Queue — provide for more specialized collections.
+The Set interface does not allow duplicate elements. This can be useful for storing collections such as a deck of cards or student records. The Set interface has a subinterface, SortedSet, that provides for ordering of elements in the set.
+
+* The List interface provides for an ordered collection, for situations in which you need precise control over where each element is inserted. You can retrieve elements from a List by their exact position.
+
+* The Queue interface enables additional insertion, extraction, and inspection operations. Elements in a Queue are typically ordered in on a FIFO basis.
+
+* The Deque interface enables insertion, deletion, and inspection operations at both the ends. Elements in a Deque can be used in both LIFO and FIFO.
+
+* The second tree starts with the Map interface, which maps keys and values similar to a Hashtable.
+
+* Map's subinterface, SortedMap, maintains its key-value pairs in ascending order or in an order specified by a Comparator.
+
+#### Implementation
+* For the Set interface, HashSet is the most commonly used implementation.
+* For the List interface, ArrayList is the most commonly used implementation.
+* For the Map interface, HashMap is the most commonly used implementation.
+* For the Queue interface, LinkedList is the most commonly used implementation.
+* For the Deque interface, ArrayDeque is the most commonly used implementation.
+
+
 ## [Map](https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html)
+HashTable, HashMap, TreeMap, LinkedHashMap.  
 https://habr.com/ru/post/128017  
 ![Map](https://habrastorage.org/storage1/4e3e57f4/aaa0b3fd/c697a3d8/5108f778.png)
 
@@ -154,6 +186,7 @@ Steps:
 1. Calculate hash code of Key {“sachin”}. It will be generated as 115.
 2. Calculate index by using index method it will be 3.
 3. Go to index 3 of array and compare first element’s key with given key. If both are equals then return the value, otherwise check for next element if it exists.
+
 
 
 ### Using the Collections Framework
