@@ -128,6 +128,9 @@ Capability to pass Oracle Certified Professional Java Programmer Exam.
 
 ![collections](https://3.bp.blogspot.com/-LUCDWSG5qXE/Uy_ee5bIR5I/AAAAAAAAAZA/oY1hR_1fcwk/s1600/Java+collection+cheat+sheet.PNG)
 
+## Map
+![Map](https://habrastorage.org/storage1/4e3e57f4/aaa0b3fd/c697a3d8/5108f778.png)
+
 ### Using the Collections Framework
 
 ### Generic Types
