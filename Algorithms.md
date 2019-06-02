@@ -136,3 +136,35 @@ HashMap provides constant time complexity for basic operations, get and put, if 
 
 ## Stack, queue, linked list(construction, understanding, usage)
 
+### [Stack](https://www.studytonight.com/data-structures/stack-data-structure.php)
+Stack is an data structure with a bounded(predefined) capacity. It is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack and the only element that can be removed is the element that is at the top of the stack, just like a pile of objects.  
+
+#### Basic features
+* Stack is an ordered list of similar data type.
+* Stack is a __LIFO(Last in First out)__ structure or we can say __FILO(First in Last out)__.
+* push() function is used to insert new elements into the Stack and pop() function is used to remove an element from the stack. Both insertion and removal are allowed at only one end of Stack called Top.
+* Stack is said to be in Overflow state when it is completely full and is said to be in Underflow state if it is completely empty.
+
+#### Applications of Stack
+* Reverse string
+* Parsing
+* Expression Conversion(Infix to Postfix, Postfix to Prefix etc)
+
+### [Queue](https://www.studytonight.com/data-structures/queue-data-structure.php)
+Is a data structure, just like stack data structure, in which the first element is inserted from one end called the REAR(also called tail), and the removal of existing element takes place from the other end called as FRONT(also called head).  
+
+This makes queue as __FIFO(First in First Out)__ data structure, which means that element inserted first will be removed first.
+
+#### Basic features
+* Like stack, queue is also an ordered list of elements of similar data types.
+* Queue is a FIFO( First in First Out ) structure.
+* Once a new element is inserted into the Queue, all the elements inserted before the new element in the queue must be removed, to remove the new element.
+* peek( ) function is oftenly used to return the value of first element without dequeuing it.
+
+#### Applications of Queue
+* Serving requests on a single shared resource, like a printer, CPU task scheduling etc.
+* In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.
+* Handling of interrupts in real-time systems. The interrupts are handled in the same order as they arrive i.e First come first served.
+
+
+
