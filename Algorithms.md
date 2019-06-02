@@ -63,12 +63,6 @@ Quick sort is based on the divide-and-conquer approach based on the idea of choo
 It reduces the space complexity and removes the use of the auxiliary array that is used in merge sort. Selecting a random pivot in an array results in an improved time complexity in most of the cases.  
 
 
-## Binary search algorithm	
-Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.  
-
-The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n).  
-
-
 ## Tree structure(construction, traversal)
 
 The algorithm finds data by repeatedly making choices at decision points called __nodes__. A node can have as few as two branches (also called children), or as many as several dozen.  
@@ -106,6 +100,12 @@ Depth First Traversals:
 (a) Inorder (Left, Root, Right) : 4 2 5 1 3
 (b) Preorder (Root, Left, Right) : 1 2 4 5 3
 (c) Postorder (Left, Right, Root) : 4 5 2 3 1
+
+
+## Binary search algorithm	
+Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.  
+
+The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n).  
 
 
 ## Hash table(creating, collisions)
