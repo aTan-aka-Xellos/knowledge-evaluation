@@ -95,11 +95,11 @@ __Depth-first search (DFS)__
 
 The algorithm starts at the root node and explores as far as possible along each branch before backtracking.  
 
-![example](https://www.geeksforgeeks.org/wp-content/uploads/2009/06/tree12.gif)
-Depth First Traversals:
-(a) Inorder (Left, Root, Right) : 4 2 5 1 3
-(b) Preorder (Root, Left, Right) : 1 2 4 5 3
-(c) Postorder (Left, Right, Root) : 4 5 2 3 1
+![example](https://www.geeksforgeeks.org/wp-content/uploads/2009/06/tree12.gif)  
+Depth First Traversals:  
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3  
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3  
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1  
 
 
 ## Binary search algorithm	
