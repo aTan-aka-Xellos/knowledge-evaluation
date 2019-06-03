@@ -358,7 +358,90 @@ Each has the following characteristics:
   
 
 
-### Stream API
+### [Stream API](https://docs.oracle.com/javase/tutorial/collections/streams/index.html)
+
+A __pipeline__ is a sequence of aggregate operations.  
+A pipeline contains the following components:
+* A source
+* Zero or more intermediate operations
+* A terminal operation
+
+#### Differences Between Aggregate Operations and Iterators
+Aggregate operations, like forEach, appear to be like iterators. However, they have several fundamental differences:
+* They use internal iteration: Aggregate operations do not contain a method like next to instruct them to process the next element of the collection.
+* They process elements from a stream: Aggregate operations process elements from a stream, not directly from a collection.
+* They support behavior as parameters: You can specify lambda expressions as parameters for most aggregate operations. This enables you to customize the behavior of a particular aggregate operation.
+
+#### Laziness
+All intermediate operations are lazy. An expression, method, or algorithm is lazy if its value is evaluated only when it is required.
+
+#### Interference
+Lambda expressions in stream operations should not interfere. Interference occurs when the source of a stream is modified while a pipeline processes the stream. 
+
+#### Stateful Lambda Expressions
+Avoid using stateful lambda expressions as parameters in stream operations. A stateful lambda expression is one whose result depends on any state that might change during the execution of a pipeline.
+
+#### Some methods
+https://habr.com/ru/company/luxoft/blog/270383
+
+Intermediate Operations:
+
+##### map 
+The map method is used to map the items in the collection to other objects according to the Predicate passed as argument
+
+##### filter 
+The filter method is used to select elements as per the Predicate passed as argument.
+
+##### sorted
+The sorted method is used to sort the stream.
+
+##### distinct
+##### peek
+##### limit
+##### skip
+
+Terminal Operations:
+
+##### forEach
+The forEach method is used to iterate through every element of the stream.  
+
+##### reduce
+Method is a general-purpose reduction operation.
+The reduce operation can takes two arguments:
+* identity: The identity element is both the initial value of the reduction and the default result if there are no elements in the stream.
+* accumulator: The accumulator function takes two parameters: a partial result of the reduction and the next element of the stream.
+
+##### collect
+The collect method modifies, or mutates, an existing value.  
+The collect method is used to return the result of the intermediate operations performed on the stream.
+
+##### findFirst 
+Return first element of the stream (return Optional)
+
+##### findAny 
+Return any element of the stream (return Optional)
+
+##### count
+Return number of elements in the stream.
+
+##### anyMatch
+Return true if the condition is true for at least one element of the stream
+
+##### allMatch
+
+##### min
+
+##### max
+
+##### toArray
+
+
+#### Parallelism
+Parallel computing involves dividing a problem into subproblems, solving those problems simultaneously (in parallel, with each subproblem running in a separate thread), and then combining the results of the solutions to the subproblems.   
+
+You can execute streams in serial or in parallel. When a stream executes in parallel, the Java runtime partitions the stream into multiple substreams. Aggregate operations iterate over and process these substreams in parallel and then combine the results.  
+
+
 
 ### Method parameter reflection
 
