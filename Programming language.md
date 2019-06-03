@@ -110,6 +110,7 @@ Important Points:
 * Interfaces can have static methods as well similar to static method of classes.
 * Default methods were introduced to provide backward compatibility for old interfaces so that they can have new methods without effecting existing code.
 
+Overriding default method in class (without keyword default and with public access lvl) is allowed.
 
 https://www.geeksforgeeks.org/static-method-in-interface-in-java
 Unlike other methods in Interface, these static methods contain the complete definition of the function and since the definition is complete and the method is static, therefore these methods cannot be overridden or changed in the implementation class.  
@@ -261,7 +262,80 @@ Steps:
 
 ## Java 8 features
 
-### Lambdas and Functional Interfaces
+### [Functional interface](https://www.geeksforgeeks.org/functional-interfaces-java)
+
+A functional interface is an interface that contains only one abstract method. They can have only one functionality to exhibit. From Java 8 onwards, lambda expressions can be used to represent the instance of a functional interface. A functional interface can have any number of default methods. Runnable, ActionListener, Comparable are some of the examples of functional interfaces.  
+
+#### @FunctionalInterface Annotation
+@FunctionalInterface annotation is used to ensure that the functional interface can’t have more than one abstract method. In case more than one abstract methods are present, the compiler flags an ‘Unexpected @FunctionalInterface annotation’ message. However, it is not mandatory to use this annotation.  
+
+#### java.util.function Package
+The java.util.function package in Java 8 contains many builtin functional interfaces like:  
+
+
+##### Supplier
+Represents a supplier of results.  
+There is no requirement that a new or distinct result be returned each time the supplier is invoked.  
+It is typically used for lazy generation of values.  
+```
+public interface Supplier<T> {
+    T get();
+}
+```
+
+##### Consumer  
+Represents an operation that accepts a single input argument and returns no result. 
+Unlike most other functional interfaces, Consumer is expected to operate via side-effects.  
+```
+@FunctionalInterface
+public interface Consumer<T> {
+    void accept(T t);
+}
+```
+
+##### Predicate 
+In mathematical logic, a predicate is a function that receives a value and returns a boolean value.  
+The Predicate interface has an abstract method test which gives a Boolean value as a result for the specified argument.  
+The Predicate functional interface is a specialization of a Function that receives a generified value and returns a boolean.  
+A typical use case of the Predicate lambda is to filter a collection of values.  
+```
+public Predicate  
+{  
+   public boolean test(T  t);
+ }
+```
+
+##### Function 
+Represents a function that accepts one argument and produces a result.  
+The Function interface has an abstract method apply which takes argument of type T and returns a result of type R.   
+Applies this function to the given argument.  
+Its prototype is public interface Function.
+```
+{
+   public R apply(T t);
+}
+```
+
+### [Lambdas](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
+
+
+Lambda expressions enable you to treat functionality as method argument, or code as data. 
+
+A lambda expression consists of the following:
+* A comma-separated list of formal parameters enclosed in parentheses. You can omit the data type of the parameters in a lambda expression. In addition, you can omit the parentheses if there is only one parameter. 
+* The arrow token, ->
+* A body, which consists of a single expression or a statement block. If you specify a single expression, then the Java runtime evaluates the expression and then returns its value. A return statement is not an expression; in a lambda expression, you must enclose statements in braces ({}). However, you do not have to enclose a void method invocation in braces.
+
+#### Accessing Local Variables of the Enclosing Scope
+
+Lambda expressions are lexically scoped. This means that they do not inherit any names from a supertype or introduce a new level of scoping. Declarations in a lambda expression are interpreted just as they are in the enclosing environment.  
+
+Lambda expression can only access local variables and parameters of the enclosing block that are final or effectively final.  
+A variable or parameter whose value is never changed after it is initialized is effectively final.  
+Simplest way to explain "effectively final" is to imagine adding the final modifier to a variable declaration. If, with this change, the program continues to behave in the same way, both at compile time and at run time, then that variable is effectively final.  
+
+To determine the type of a lambda expression, the Java compiler uses the target type of the context or situation in which the lambda expression was found.  
+
 
 ### [Method references](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
 The method reference is semantically the same as the lambda expression.  
