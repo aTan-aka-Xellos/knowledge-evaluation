@@ -39,6 +39,17 @@ In HTTPS, the communication protocol is encrypted using Transport Layer Security
 
 ## [Understanding of basic security risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_2017_Project)
 
+Top 10 OWASP risks:
+* Injection
+* Broken Authentication
+* Sensitive Data Exposure
+* XML External Entities (XXE)
+* Broken Access Control
+* Security Misconfiguration
+* Cross-Site Scripting (XSS)
+* Insecure Deserialization
+* Using Components with Known Vulnerabilities
+* Insufficient Logging&Monitoring
 
 ## [Java SE Security Overview](https://docs.oracle.com/javase/7/docs/technotes/guides/security/)
 
