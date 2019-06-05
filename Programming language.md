@@ -72,7 +72,13 @@ This memory model is further broken into smaller parts called generations, these
 
 
 ### Passing Variables into Methods
+Java always pass by value.
+Since the variables are just the reference to the objects, we get confused that we are passing the reference so java is pass by reference. However we are passing a copy of the reference and hence it’s pass by value.
+https://www.journaldev.com/3884/java-is-pass-by-value-and-not-pass-by-reference
 
+https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html
+
+Reference data type parameters, such as objects, are also passed into methods by value. This means that when the method returns, the passed-in reference still references the same object as before. However, the values of the object's fields can be changed in the method, if they have the proper access level.
 
 ### Array Declaration, Construction, and Initialization
 
