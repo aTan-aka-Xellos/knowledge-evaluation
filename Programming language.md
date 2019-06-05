@@ -39,7 +39,33 @@ The distinction between hiding a static method and overriding an instance method
 * The version of the overridden instance method that gets invoked is the one in the subclass.
 * The version of the hidden static method that gets invoked depends on whether it is invoked from the superclass or the subclass.
 
-### Stack and Heap
+### [Stack and Heap](https://www.baeldung.com/java-stack-heap)
+To run an application in an optimal way, JVM divides memory into stack and heap memory.  
+
+Stack Memory in Java is used for static memory allocation and the execution of a thread. It contains primitive values that are specific to a method and references to objects that are in a heap, referred from the method.  
+
+* Access to this memory is in Last-In-First-Out (LIFO) order.   
+* It grows and shrinks as new methods are called and returned respectively
+* Variables inside stack exist only as long as the method that created them is running
+* It’s automatically allocated and deallocated when method finishes execution
+* If this memory is full, Java throws java.lang.StackOverFlowError
+* Access to this memory is fast when compared to heap memory
+* This memory is threadsafe as each thread operates in its own stack
+
+Heap space in Java is used for dynamic memory allocation for Java objects and JRE classes at the runtime. New objects are always created in heap space and the references to this objects are stored in stack memory.  
+These objects have global access and can be accessed from anywhere in the application.  
+
+This memory model is further broken into smaller parts called generations, these are:
+
+1. Young Generation – this is where all new objects are allocated and aged. A minor Garbage collection occurs when this fills up
+2. Old or Tenured Generation – this is where long surviving objects are stored. When objects are stored in the Young Generation, a threshold for the object’s age is set and when that threshold is reached, the object is moved to the old generation
+3. Permanent Generation – this consists of JVM metadata for the runtime classes and application methods
+
+* It’s accessed via complex memory management techniques that include Young Generation, Old or Tenured Generation, and Permanent Generation
+* If heap space is full, Java throws java.lang.OutOfMemoryError
+* Access to this memory is relatively slower than stack memory
+* This memory, in contrast to stack, isn’t automatically deallocated. It needs Garbage Collector to free up unused objects so as to keep the efficiency of the memory usage
+* Unlike stack, a heap isn’t threadsafe and needs to be guarded by properly synchronizing the code
 
 
 ### Literals, Assignments, and Variables
