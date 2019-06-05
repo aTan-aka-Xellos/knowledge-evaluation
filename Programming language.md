@@ -503,18 +503,43 @@ Return true if the condition is true for at least one element of the stream
 
 ##### toArray
 
-
 #### Parallelism
 Parallel computing involves dividing a problem into subproblems, solving those problems simultaneously (in parallel, with each subproblem running in a separate thread), and then combining the results of the solutions to the subproblems.   
 
 You can execute streams in serial or in parallel. When a stream executes in parallel, the Java runtime partitions the stream into multiple substreams. Aggregate operations iterate over and process these substreams in parallel and then combine the results.  
 
 
+### [Method parameter reflection](https://docs.oracle.com/javase/tutorial/reflect/member/methodparameterreflection.html)
+You can obtain the names of the formal parameters of any method or constructor with the method java.lang.reflect.Executable.getParameters  
+However, .class files do not store formal parameter names by default.  
+To store formal parameter names in a particular .class file, and thus enable the Reflection API to retrieve formal parameter names, compile the source file with the -parameters option to the javac compiler.  
 
-### Method parameter reflection
+More:
+https://www.beyondjava.net/reading-java-8-method-parameter-named-reflection
 
-### New Date API
+### [New Date API](https://www.geeksforgeeks.org/new-date-time-api-java8)
+
+New date-time API is introduced in Java 8 to overcome the following drawbacks of old date-time API:
+* Not thread safe : Unlike old java.util.Date which is not thread safe the new date-time API is immutable and doesn’t have setter methods.
+* Less operations : In old API there are only few date operations but the new API provides us with many date operations.
+
+java.time:
+* Local : Simplified date-time API with no complexity of timezone handling
+* Zoned : Specialized date-time API to deal with various timezones
+* LocalDate/LocatTime and LocalDateTime API : Use it when time zones are NOT required
+
+Period and Duration classes :
+* Period : It deals with date based amount of time.
+* Duration : It deals with time based amount of time.
+
+ChronoUnits Enum: java.time.temporal.ChronoUnit enum is added in Java 8 to replace integer values used in old API to represent day, month etc.
+
+TemporalAdjuster : It is used to perform various date related operations
 
 ## Java 9 features
 
 ### Java Platform Module System
+
+
+
+
