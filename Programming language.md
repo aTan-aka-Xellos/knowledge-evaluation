@@ -159,7 +159,19 @@ To use a static method, Interface name should be instantiated with it, as it is 
 
 ### Local-Variable Type Inference
 
+Only for local variables with the initializer.  
+var is not a keyword  
+won’t work without the initializer or null  
+won’t work for non-local variables: public var = "hello";  
+won't work with lambda
+won't work with arrays
+
 ### Time-Based release versioning
+The new time-based model has replaced the feature-based, multi-year release model of the past. Unlike the old releases, the new time-based releases will not be delayed and features will be released every six months, with no constraints on what features can go out in the releases.   
+
+The updates releases will occur every quarter (Jan, April, July, Oct). Update releases will be strictly limited to fixes of security issues, regressions, and bugs in newer features.  
+
+LTS version of the products will offer premier and sustained support from Oracle and it will be targeted every 3 years. Also, updates for these releases will be available for at least three years.  
 
 
 ## CL2 (Competent)
