@@ -121,8 +121,11 @@ Reference data type parameters, such as objects, are also passed into methods by
 ### Using the diamond operator for constructor type inference
 
 
-### Using the @SafeVarargs annotation
+### [Using the @SafeVarargs annotation](https://www.baeldung.com/java-safevarargs)
+warning: [unchecked] Possible heap pollution from parameterized vararg type T
+To squash this warning, we can add the @SafeVarargs annotation on final or static methods and constructors.
 
+@SafeVarargs is like @SupressWarnings in that it allows us to declare that a particular compiler warning is a false positive. Once we ensure our actions are safe, we can add this annotation
 
 ## Java 8 features 
 
