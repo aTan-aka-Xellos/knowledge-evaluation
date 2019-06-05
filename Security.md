@@ -101,6 +101,9 @@ Security for components is provided by their containers. A container provides tw
 
 ## Java EE Characteristics of Application Security (Authentication, Authorization, Data integrity
 
+Identification is a process that enables recognition of an entity by a system.  
+Authentication is a process that verifies the identity of a user, device, or other entity in a computer system, usually as a prerequisite to allowing access to resources in a system.  
+
 * Authentication: The means by which communicating entities, such as client and server, prove to each other that they are acting on behalf of specific identities that are authorized for access. This ensures that users are who they say they are.
 
 * Authorization, or access control: The means by which interactions with resources are limited to collections of users or programs for the purpose of enforcing integrity, confidentiality, or availability constraints. This ensures that users have permission to perform operations or access data.
