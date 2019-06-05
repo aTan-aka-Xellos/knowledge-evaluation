@@ -89,14 +89,31 @@ The Java platform also provides API support and provider implementations for a n
 The Java platform provides APIs and an implementation of the SSL and TLS protocols that includes functionality for data encryption, message integrity, server authentication, and optional client authentication. Applications can use SSL/TLS to provide for the secure passage of data between two peers over any application protocol, such as HTTP on top of TCP/IP.
 
 
-## [Java SE Message Dig-esters SHA2, MD5](https://docs.oracle.com/javase/7/docs/technotes/guides/security/)
+## [Java SE Message Dig-esters SHA2, MD5](https://docs.oracle.com/javase/7/docs/api/java/security/MessageDigest.html)
+MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256. Message digests are secure one-way hash functions that take arbitrary-sized data and output a fixed-length hash value.
 
+## [Java EE Introduction to Security in the Platform](https://docs.oracle.com/javaee/7/tutorial/security-intro.htm)
 
-## Java EE Introduction to Security in the Platform
+Security for components is provided by their containers. A container provides two kinds of security: declarative and programmatic.
+* Declarative security expresses an application component's security requirements by using either deployment descriptors or annotations.
+* Programmatic security is embedded in an application and is used to make security decisions.
 
 
 ## Java EE Characteristics of Application Security (Authentication, Authorization, Data integrity
 
+* Authentication: The means by which communicating entities, such as client and server, prove to each other that they are acting on behalf of specific identities that are authorized for access. This ensures that users are who they say they are.
+
+* Authorization, or access control: The means by which interactions with resources are limited to collections of users or programs for the purpose of enforcing integrity, confidentiality, or availability constraints. This ensures that users have permission to perform operations or access data.
+
+* Data integrity: The means used to prove that information has not been modified by a third party, an entity other than the source of the information. For example, a recipient of data sent over an open network must be able to detect and discard messages that were modified after they were sent. This ensures that only authorized users can modify data.
+
+* Confidentiality, or data privacy: The means used to ensure that information is made available only to users who are authorized to access it. This ensures that only authorized users can view sensitive data.
+
+* Non-repudiation: The means used to prove that a user who performed some action cannot reasonably deny having done so. This ensures that transactions can be proved to have happened.
+
+* Quality of Service: The means used to provide better service to selected network traffic over various technologies.
+
+* Auditing: The means used to capture a tamper-resistant record of security-related events for the purpose of being able to evaluate the effectiveness of security policies and mechanisms. To enable this, the system maintains a record of transactions and security information.
 
 ## Java EE Security Mechanisms (Application, Transport, Message Layer)
 
