@@ -52,6 +52,41 @@ Top 10 OWASP risks:
 * Insufficient Logging&Monitoring
 
 ## [Java SE Security Overview](https://docs.oracle.com/javase/7/docs/technotes/guides/security/)
+https://docs.oracle.com/javase/7/docs/technotes/guides/security/overview/jsoverview.html
+
+#### Java Language Security and Bytecode Verification
+A compiler translates Java programs into a machine-independent bytecode representation. A bytecode verifier is invoked to ensure that only legitimate bytecodes are executed in the Java runtime. It checks that the bytecodes conform to the Java Language Specification and do not violate Java language rules or namespace restrictions. The verifier also checks for memory management violations, stack underflows or overflows, and illegal data typecasts. Once bytecodes have been verified, the Java runtime prepares them for execution.
+
+#### Basic Security Architecture
+The Java platform defines a set of APIs spanning major security areas, including cryptography, public key infrastructure, authentication, secure communication, and access control. These APIs allow developers to easily integrate security into their application code. They were designed around the following principles:
+
+##### Implementation independence
+Applications do not need to implement security themselves. Rather, they can request security services from the Java platform. Security services are implemented in providers (see below), which are plugged into the Java platform via a standard interface. An application may rely on multiple independent providers for security functionality.
+##### Implementation interoperability
+Providers are interoperable across applications. Specifically, an application is not bound to a specific provider, and a provider is not bound to a specific application.
+##### Algorithm extensibility
+The Java platform includes a number of built-in providers that implement a basic set of security services that are widely used today. However, some applications may rely on emerging standards not yet implemented, or on proprietary services. The Java platform supports the installation of custom providers that implement such services.
+
+#### File Locations
+Certain aspects of Java security mentioned in this paper, including the configuration of providers, may be customized by setting security properties. You may set security properties statically in the security properties file, which by default is the java.security file in the lib/security directory of the directory where the Java™ Runtime Environment (JRE) is installed. Security properties may also be set dynamically by calling appropriate methods of the Security class (in the java.security package).
+
+#### Cryptography
+The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.
+
+#### Public Key Infrastructure
+Public Key Infrastructure (PKI) is a term used for a framework that enables secure exchange of information based on public key cryptography.
+
+#### Key and Certificate Storage
+The Java platform provides for long-term persistent storage of cryptographic keys and certificates via key and certificate stores.
+
+#### Authentication
+The Java platform provides APIs that enable an application to perform user authentication via pluggable login modules.
+
+#### Secure Communication
+The Java platform also provides API support and provider implementations for a number of standard secure communication protocols.
+
+#### SSL/TLS
+The Java platform provides APIs and an implementation of the SSL and TLS protocols that includes functionality for data encryption, message integrity, server authentication, and optional client authentication. Applications can use SSL/TLS to provide for the secure passage of data between two peers over any application protocol, such as HTTP on top of TCP/IP.
 
 
 ## [Java SE Message Dig-esters SHA2, MD5](https://docs.oracle.com/javase/7/docs/technotes/guides/security/)
