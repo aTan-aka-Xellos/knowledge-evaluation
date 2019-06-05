@@ -217,11 +217,32 @@ Steps:
 2. Calculate index by using index method it will be 3.
 3. Go to index 3 of array and compare first element’s key with given key. If both are equals then return the value, otherwise check for next element if it exists.
 
-
-
 ### Using the Collections Framework
 
 ### Generic Types
+
+T vs ?
+https://stackoverflow.com/a/28760323/4355903 
+There are certain places, where wildcards, and type parameters do the same thing. But there are also certain places, where you have to use type parameters.  
+If you want to enforce some relationship on the different types of method arguments, you can't do that with wildcards, you have to use type parameters.  
+
+https://www.quora.com/What-is-the-difference-between-using-T-and-a-wildcard-in-Java-Generics
+
+Some difference between using wildcards and type parameters:
+* If you have only one parameterized type argument, then you can use wildcard, although type parameter will also work.
+* Type parameters support multiple bounds, wildcards don't.
+* Wildcards support both upper and lower bounds, type parameters just support upper bounds. 
+
+```
+public static <T extends Number> void copy(List<T> dest, List<T> src)
+public static void copy(List<? extends Number> dest, List<? extends Number> src)
+```
+In 2nd case, you can pass List<Integer> and List<Float>  
+
+Why Use Generics?
+* Stronger type checks at compile time
+* Elimination of casts
+* Enabling programmers to implement generic algorithms
 
 ### JAR Files
 
