@@ -15,7 +15,7 @@
 #### [OOD (Competent)](OOD.md) (In progress)
 #### [DB Design](DB%20Design.md) (Done)
 #### [Modeling](Modeling.md)
-#### [Security](Security.md)
+#### [Security](Security.md) (Done)
 #### [Algorithms](Algorithms.md) (Done)
 
 ## Construction
