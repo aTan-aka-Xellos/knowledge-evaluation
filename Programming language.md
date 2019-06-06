@@ -185,7 +185,16 @@ Capability to pass Oracle Certified Professional Java Programmer Exam.
 
 
 ### Garbage Collection
+https://www.geeksforgeeks.org/garbage-collection-java/  
+System.gc() method  
+Runtime.getRuntime().gc() method  
 
+There is no guarantee that any one of above two methods will definitely run Garbage Collector.  
+Just before destroying an object, Garbage Collector calls finalize() method on the object to perform cleanup activities. Once finalize() method completes, Garbage Collector destroys that object.  
+
+In reality, the time at which the garbage collector calls finalizers is dependent on the JVM’s implementation and the system’s conditions, which are out of our control.  
+
+finalize has been deprecated starting with Java 9 – and will eventually be removed.  
 
 ### Working with the Assertion Mechanism
 
@@ -194,12 +203,39 @@ Capability to pass Oracle Certified Professional Java Programmer Exam.
 
 
 ### Dates, Numbers, and Currency
-
+java.util.Date  
+java.util.Calendar  
+java.util.Locale The Locale class allows us to create an object that represents a specific geographical, political, or cultural region of the world  
+java.text.NumberFormat The NumberFormat class provides us with methods to format numbers and currencies for different locales  
+java.text.DateFormat The DateFormat class provides us with methods to format dates in various styles and for different locales  
 
 ### Parsing,Tokenizing, and Formatting
+Regular Expression  
+```
+Pattern p = Pattern.compile("aba");      
+Matcher m = p.matcher("abababa");
+```
 
+Tokenizing  
+Tokens are the actual pieces of data.  
+There are 2 classes capable of tokenizing: String with String[] split(String regex) method and Scanner.  
+Delimiters are the expressions that separate the tokens from each other; if supported, an delimiter can be a regex.  
+
+Formating  
+System.out.printf  and  System.out.format  
 
 ### Overriding hashCode() and equals()
+
+HashMap and HashSet use the hashcode value of an object to find out how the object would be stored in the collection, and subsequently hashcode is used to help locate the object in the collection. 
+
+Not overriding both of them will prevent your class from functioning properly in conjunction with all hash-based collections, including HashMap, HashSet, and Hashtable. (Joshua Bloch)  
+
+Whenever it(hashcode) is invoked on the same object more than once during an execution of a Java application, the hashCode method must consistently return the same integer.
+
+If two objects are equal according to the equals(Object) method, then calling the hashCode method on each of the two objects must produce the same integer result.
+
+It is not required that if two objects are unequal according to the equals(java.lang.Object) method, then calling the hashCode method on each of the two objects must produce distinct integer results.   
+
 
 ### [Collections](https://docs.oracle.com/javase/tutorial/collections/TOC.html)
 
@@ -216,7 +252,6 @@ __Some highlights:__
 The java.util.concurrent package contains several collections implementations, which are thread-safe but not governed by a single exclusion lock.  
 
 The Collections class (as opposed to the Collection interface), provides static methods that operate on or return collections, which are known as Wrapper implementations.  
-
 
 
 #### Interfaces  
@@ -293,25 +328,57 @@ Why Use Generics?
 
 ### JAR Files
 
-
 ### Static Imports
 
 ### Serialization
+Serialization is a mechanism of converting the state of an object into a byte stream.   
+To make a Java object serializable we implement the java.io.Serializable interface.  
+ 
+Advantages of Serialization
+1. To save/persist state of an object.
+2. To travel an object across a network.
+
+* Only non-static data members are saved via Serialization process.
+* Static data members and transient data members are not saved via Serialization 
+
+#### SerialVersionUID
+The Serialization runtime associates a version number with each Serializable class called a SerialVersionUID, which is used during Deserialization to verify that sender and reciever of a serialized object have loaded classes for that object which are compatible with respect to serialization.  
+
 
 ### Inner Classes
+Inner class means one class which is a member of another class. There are basically four types of inner classes in java.
 
+###  Nested Inner class  
+Nested Inner class can access any private instance variable of outer class. Like any other instance variable, we can have access modifier private, protected, public and default modifier.
+Like class, interface can also be nested and can have access specifiers.
+We can’t have static method in a nested inner class.  
 
-### Method-Local Inner Classes
+###  Method Local inner classes 
+Inner class can be declared within a method of an outer class.  
 
+###  Anonymous inner classes  
+Anonymous inner classes are declared without any name at all. They are created in two ways:   
+* As subclass of specified type
+* As implementer of the specified interface
 
-### Anonymous Inner Classes
-
-
-### Static Nested Classes
-
+###  Static nested classes  
+Static nested classes are not technically an inner class. They are like a static member of outer class.
 
 ### Reflection
+Reflection is an API which is used to examine or modify the behavior of methods, classes, interfaces at runtime.  
+* The required classes for reflection are provided under java.lang.reflect package.
+* Reflection gives us information about the class to which an object belongs and also the methods of that class which can be executed by using the object.
+* Through reflection we can invoke methods at runtime irrespective of the access specifier used with them.
 
+Advantages of Using Reflection:
+* Extensibility Features: An application may make use of external, user-defined classes by creating instances of extensibility objects using their fully-qualified names.
+* Debugging and testing tools: Debuggers use the property of reflection to examine private members on classes.
+
+Drawbacks:
+* Performance Overhead: Reflective operations have slower performance than their non-reflective counterparts, and should be avoided in sections of code which are called frequently in performance-sensitive applications.
+* Exposure of Internals: Reflective code breaks abstractions and therefore may change behavior with upgrades of the platform.
+
+sun.misc.Unsafe consists of 105 methods
 
 ### Annotations
 
