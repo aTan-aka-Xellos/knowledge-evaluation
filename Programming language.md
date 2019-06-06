@@ -163,7 +163,7 @@ Only for local variables with the initializer.
 var is not a keyword  
 won’t work without the initializer or null  
 won’t work for non-local variables: public var = "hello";  
-won't work with lambda
+won't work with lambda (changed in Java 11)
 won't work with arrays
 
 ### Time-Based release versioning
@@ -616,3 +616,53 @@ Module Types
 * Unnamed Module – When a class or JAR is loaded onto the classpath, but not the module path, it’s automatically added to the unnamed module. It’s a catch-all module to maintain backward compatibility with previously-written Java code.
 
 
+### Other Java 8 features
+* Java Lambda Expressions
+* Java Streams (functional streams)
+* JavaFX (bundled with Java SE from Java 8).
+* The Nashorn JavaScript engine.
+
+### Other Java 9 features
+* Java Modules
+* Java Reflection Module class
+* Experimental HTTP Client
+* JShell
+* Java Try With Resources Enhancement
+Before Java 9 a resource that is to be automatically closed must be created inside the parentheses of the try block of a try-with-resources construct. From Java 9, this is no longer necessary. If the variable referencing the resource is effectively final, you can simply enter a reference to the variable inside the try block parentheses.  
+```
+FileInputStream input = new FileInputStream("file.txt");
+    try(input) {...}
+```
+You can use multiple resources inside a Java try-with-resources block and have them all automatically closed.   
+Custom AutoClosable Implementations
+
+* Java Compact Strings
+The compact strings feature lets the Java VM detect if a string only contains ISO-8859-1/Latin-1 characters. If it does, the String will only use 1 byte per character internally. The characters of a compact Java String can thus be represented by a byte array instead of a char array.  
+* Java Microbenchmark Harness (JMH) included in the JDK
+http://tutorials.jenkov.com/java-performance/jmh.html  
+
+### Other Java 10 features
+* Local-Variable Type Inference
+* Parallel Full Garbage Collection for G1 (a Garbage Collector)
+* Graal included as experimental JIT compiler
+* Several internal, JVM and platform level changes
+
+### Other Java 11 features
+* Removed Java EE and Corba modules from JDK.
+* HTTP Client made standard (the one added in Java 9).
+* Java var keyword allowed as lambda expression parameter type.
+* Key agreement via elliptic curve cryptography.
+* Unicode 10.
+* New cryptographic algorithms.
+* Launch single file source code programs (compiled when executed).
+* TLS 1.3 support.
+* Deprecate the Nashorn JavaScript engine
+
+### Other Java 12 features
+* A low pause time garbage collector called Shenandoah.
+* Java switch expressions (preview - may be removed from Java again).
+* JVM Constants API.
+* Abortable mixed collections in G1 (garbage collections).
+* Promptly return unused committed memory from G1.
+
+http://tutorials.jenkov.com/java/index.html
