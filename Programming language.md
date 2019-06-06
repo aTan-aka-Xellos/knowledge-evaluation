@@ -518,6 +518,7 @@ More:
 https://www.beyondjava.net/reading-java-8-method-parameter-named-reflection
 
 ### [New Date API](https://www.geeksforgeeks.org/new-date-time-api-java8)
+https://www.baeldung.com/java-8-date-time-intro
 
 New date-time API is introduced in Java 8 to overcome the following drawbacks of old date-time API:
 * Not thread safe : Unlike old java.util.Date which is not thread safe the new date-time API is immutable and doesn’t have setter methods.
@@ -526,7 +527,39 @@ New date-time API is introduced in Java 8 to overcome the following drawbacks of
 java.time:
 * Local : Simplified date-time API with no complexity of timezone handling
 * Zoned : Specialized date-time API to deal with various timezones
-* LocalDate/LocatTime and LocalDateTime API : Use it when time zones are NOT required
+* LocalDate/LocatTime and LocalDateTime API : Use it when time zones are NOT required. 
+
+__The LocalDate__ represents a date in ISO format (yyyy-MM-dd) without time.  
+```
+LocalDate localDate = LocalDate.now();
+LocalDate.of(2015, 02, 20);
+LocalDate.parse("2015-02-20");
+LocalDate tomorrow = LocalDate.now().plusDays(1);
+LocalDate previousMonthSameDay = LocalDate.now().minus(1, ChronoUnit.MONTHS);
+```
+
+__The LocalTime__ represents time without a date.  
+```
+LocalTime now = LocalTime.now();
+LocalTime sixThirty = LocalTime.of(6, 30);
+LocalTime sixThirty = LocalTime.parse("06:30");
+```
+
+__The LocalDateTime__ is used to represent a combination of date and time.  
+```
+LocalDateTime.of(2015, Month.FEBRUARY, 20, 06, 30);
+LocalDateTime.parse("2015-02-20T06:30:00");
+```
+
+__ZonedDateTime__ when we need to deal with time zone specific date and time. The ZoneId is an identifier used to represent different zones. There are about 40 different time zones and the ZoneId are used to represent them as follows.  
+```
+ZoneId zoneId = ZoneId.of("Europe/Paris");
+Set<String> allZoneIds = ZoneId.getAvailableZoneIds();
+ZonedDateTime.parse("2015-05-03T10:15:30+01:00[Europe/Paris]");
+```
+
+__The Period__ class represents a quantity of time in terms of years, months and days and the __Duration__ class represents a quantity of time in terms of seconds and nano seconds.
+
 
 Period and Duration classes :
 * Period : It deals with date based amount of time.
@@ -535,6 +568,19 @@ Period and Duration classes :
 ChronoUnits Enum: java.time.temporal.ChronoUnit enum is added in Java 8 to replace integer values used in old API to represent day, month etc.
 
 TemporalAdjuster : It is used to perform various date related operations
+
+#### Date and Time Formatting
+```
+String localDateString = localDateTime.format(DateTimeFormatter.ISO_DATE);
+localDateTime.format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+
+```
+
+
+#### Issues with the Existing Date/Time APIs
+* Thread Safety
+* Poor APIs Design and Ease of Understanding
+* Developers had to write additional logic to handle timezone logic with the old APIs
 
 ## Java 9 features
 
