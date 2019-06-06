@@ -200,7 +200,44 @@ finalize has been deprecated starting with Java 9 – and will eventually be rem
 
 
 ### File Navigation and I/O
+The File class is Java’s representation of a file or directory path name. Because file and directory names have different formats on different platforms, a simple string is not adequate to name them.  
+```
+File a = new File("/usr/local/bin/geeks");
+```
 
+In Java 8, there is a new method Files.newBufferedReader(Paths.get("file")) to return a BufferedReader  
+```try (BufferedReader br = Files.newBufferedReader(Paths.get("filename.txt")))```
+
+Java 7:
+```try (FileReader reader = new FileReader("filename.txt");
+        BufferedReader br = new BufferedReader(reader))
+```
+
+In Java, FileOutputStream is a bytes stream class that’s used to handle raw binary data. To write the data to file, you have to convert the data into bytes and save it to file.
+
+```
+file = new File("c:/newfile.txt");
+fop = new FileOutputStream(file);
+```
+
+In Java, we can use BufferedWriter to write content into a file.  
+
+#### NIO2
+
+NIO.2 introduced asynchronous i/o.
+
+File APIs in NIO2 constitute one of the major new functional areas of the Java Platform that shipped with Java 7, 
+
+We can have a Path instance representing a file or a directory on the file system.  
+To create a regular file, we use the createFile API and pass to it a Path object representing the file we want to create.
+```Files.createFile(p);```
+
+Some useful methods:
+```
+Files.walkFileTree()
+Files.isSymbolicLink()
+Files.readAttributes()
+```
 
 ### Dates, Numbers, and Currency
 java.util.Date  
