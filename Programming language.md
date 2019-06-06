@@ -576,7 +576,6 @@ localDateTime.format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
 
 ```
 
-
 #### Issues with the Existing Date/Time APIs
 * Thread Safety
 * Poor APIs Design and Ease of Understanding
@@ -584,8 +583,36 @@ localDateTime.format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
 
 ## Java 9 features
 
-### Java Platform Module System
+### [Java Platform Module System](https://www.baeldung.com/java-9-modularity)
 
+A Module is a group of closely related packages and resources along with a new module descriptor file.  
+Each module is responsible for its resources, like media or configuration files.  
 
+Previously we’d put all resources into the root level of our project and manually manage which resources belonged to different parts of the application.  
+With modules, we can ship required images and XML files with the module that needs it, making our projects much easier to manage.  
+
+To set up a module, we need to put a special file at the root of our packages named module-info.java.
+
+Java Module Benefits
+Smaller Application Distributables
+Encapsulation of Internal Packages
+Startup Detection of Missing Modules
+
+#### Module Descriptor
+When we create a module, we include a descriptor file that defines several aspects of our new module:
+* Name – the name of our module
+* Dependencies – a list of other modules that this module depends on
+* Public Packages – a list of all packages we want accessible from outside the module
+* Services Offered – we can provide service implementations that can be consumed by other modules
+* Services Consumed – allows the current module to be a consumer of a service
+* Reflection Permissions – explicitly allows other classes to use reflection to access the private members of a package
+
+We need to list all packages we want to be public because by default all packages are module private.
+
+Module Types
+* System Modules – These are the modules listed when we run the list-modules command above. They include the Java SE and JDK modules.
+* Application Modules – These modules are what we usually want to build when we decide to use Modules. They are named and defined in the compiled module-info.class file included in the assembled JAR.
+* Automatic Modules – We can include unofficial modules by adding existing JAR files to the module path. The name of the module will be derived from the name of the JAR. Automatic modules will have full read access to every other module loaded by the path.
+* Unnamed Module – When a class or JAR is loaded onto the classpath, but not the module path, it’s automatically added to the unnamed module. It’s a catch-all module to maintain backward compatibility with previously-written Java code.
 
 
