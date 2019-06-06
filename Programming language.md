@@ -418,19 +418,49 @@ Drawbacks:
 sun.misc.Unsafe consists of 105 methods
 
 ### Annotations
+Annotations are used to provide supplement information about a program.
 
+* Annotations start with ‘@’.
+* Annotations do not change action of a compiled program.
+* Annotations help to associate metadata (information) to the program elements i.e. instance variables, constructors, methods, classes, etc.
+
+There are 3 categories of Annotations:
+* Marker Annotations: The only purpose is to mark a declaration.
+* Single value Annotations: These annotations contain only one member and allow a shorthand form of specifying the value of the member
+* Full Annotations: These annotations consist of multiple data members/ name, value, pairs.
 
 ### Locating Files and Directories Using Paths
-
+```File[] matchingFiles = f.listFiles(new FilenameFilter()```
 
 ### Obtaining and Managing Files and Directories
-
+```
+Files.readAllBytes(Paths.get(fileName))
+Files.readAllLines(Paths.get(fileName))
+Using BufferedReader
+Using FileReader class
+Using Scanner class
+```
 
 ### Working with Filesystems in Java 7
+A FileSystem object is used to perform two tasks:
+* an interface between a Java program and a file system.
+* a factory for creating many types of file system-related objects and services.
 
+A FileSystem object is platform-dependent.
+
+```
+FileSystem fs  = FileSystems.getDefault();
+fs.getFileStores()
+fs.getSeparator()
+```
 
 ### Stream IO in Java 7
+Java IO streams are flows of data you can either read from, or write to. As mentioned earlier in this tutorial, streams are typically connected to a data source, or data destination, like a file, network connection etc.  
 
+The class java.io.InputStream is the base class for all Java IO input streams.  
+The class java.io.OutputStream is the base class of all Java IO output streams.  
+
+![io](https://www.tutorialspoint.com/java/images/file_io.jpg)  
 
 ## Java 8 features
 
