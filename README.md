@@ -21,8 +21,8 @@
 ## Construction
 #### [Programming language (Competent)](Programming%20language.md) (In progress)
 #### [Refactoring](Refactoring.md) 
-#### [Concurrency](Concurrency.md)
-#### [Networking](Networking.md)
+#### [Concurrency](Concurrency.md) (In progress)
+#### [Networking](Networking.md) (In progress)
 
 ## Integration
 #### [Java Enterprise Essentials (Competent)](Java%20Enterprise%20Essentials.md) (In progress)
