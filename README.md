@@ -19,10 +19,10 @@
 #### [Algorithms](Algorithms.md) (Done)
 
 ## Construction
-#### [Programming language (Competent)](Programming%20language.md) (In progress)
+#### [Programming language (Competent)](Programming%20language.md) (Partly)
 #### [Refactoring](Refactoring.md) 
 #### [Concurrency](Concurrency.md) (In progress)
-#### [Networking](Networking.md) (In progress)
+#### [Networking](Networking.md) (Partly)
 
 ## Integration
 #### [Java Enterprise Essentials (Competent)](Java%20Enterprise%20Essentials.md) (In progress)
@@ -36,9 +36,9 @@
 #### Infrastructure As Code (Automation Tools)
 
 ## Data Processing
-#### [SQL](SQL.md) (Competent)
+#### [SQL (Competent)](SQL.md) (Partly)
 #### NoSQL
-#### DB Access
+#### DB Access(DB%20Access.md) (In progress)
 #### Big Data
 
 ## Verification
