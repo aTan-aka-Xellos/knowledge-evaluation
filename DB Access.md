@@ -11,7 +11,11 @@ This level requires knowledge of the JDBC and JPA fundamentals, and Entity manip
 
 ### Retrieving and Modifying Values from Result Sets
 
-### Using Transactions
+https://docs.oracle.com/javase/tutorial/jdbc/basics/retrieving.html
+
+### [Using Transactions](https://docs.oracle.com/javase/tutorial/jdbc/basics/transactions.html)
+
+When a connection is created, it is in auto-commit mode.  
 
 ## Understanding object/relational mapping concepts
 
