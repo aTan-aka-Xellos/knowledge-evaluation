@@ -36,7 +36,7 @@
 #### Infrastructure As Code (Automation Tools)
 
 ## Data Processing
-#### SQL (Competent)
+#### [SQL](SQL.md) (Competent)
 #### NoSQL
 #### DB Access
 #### Big Data
