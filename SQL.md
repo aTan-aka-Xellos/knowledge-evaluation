@@ -17,6 +17,9 @@ Database objects understanding. Perform simple data manipulation select/insert/d
 
 ## Joins understanding
 
+https://www.w3schools.com/sql/sql_syntax.asp
+
+![join](http://i.imgur.com/1m55Wqo.jpg)
 
 # Competent
 Ability to create database objects. Creating complex data transformations, creating stored procedures any complexity. Understanding sessions, locks and transactions.  
@@ -24,6 +27,9 @@ Ability to create database objects. Creating complex data transformations, creat
 ## Creating, modifying, removing database objects
 
 ## Aggregations (ORDER BY, GROUP BY, HAVING, SUM, COUNT, AVG, etc)
+
+http://code.mu/sql/having.html
+https://www.w3schools.com/sql/sql_syntax.asp
 
 ## Combining the results of multiple queries (union, except, intersect, minus, subqueries)
 
