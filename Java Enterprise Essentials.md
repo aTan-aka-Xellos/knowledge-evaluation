@@ -178,3 +178,34 @@ The SecurityContext API is intended for use by application code to query and int
 
 The Java EE Connector Architecture is used by tools vendors and system integrators to create resource adapters that support access to enterprise information systems that can be plugged in to any Java EE product. A resource adapter is a software component that allows Java EE application components to access and interact with the underlying resource manager of the EIS. Because a resource adapter is specific to its resource manager, a different resource adapter typically exists for each type of database or enterprise information system.
 
+
+# Competent
+Competent level questions are focused on DI, Bean Validation and practical experience and skills with either Spring 3 or EJB 3.2. Please note that theoretical knowledge is not enough to be evaluated as Competent! It is recommended to use Pro Spring 3 book and Spring Documentation for Spring related topics, however other sources are applicable as well  
+
+## DI: Interceptors and Decorators
+
+http://www.mastertheboss.com/jboss-frameworks/cdi/interceptors-and-decorators-tutorial
+
+## DI: Scopes and Contexts
+
+https://docs.oracle.com/javaee/6/tutorial/doc/gjbbk.html  
+* @RequestScoped
+* @SessionScoped
+* @ApplicationScoped
+* @Dependent
+* @ConversationScoped
+
+
+## DI: Producer, Disposer, Stereotypes, Events
+
+
+## Spring
+
+Bean scopes
+* singleton
+* prototype
+* request 
+* session 
+* globalSession 
+
+
