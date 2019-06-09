@@ -33,6 +33,8 @@ object-relational mapping, often referred to as O-R mapping or simply ORM.
 
 ![jpa_concept](files/JPA_concept.jpg)
 
+https://easyjava.ru/data/jpa/jpa-entitymanager-upravlyaem-sushhnostyami/ 
+
 The Java Persistence API is a lightweight, POJO-based framework for Java persistence.   
 
 Entity: 
@@ -75,6 +77,8 @@ operating on a particular entity.
 
 ### Annotations for Object/Relational Mapping
 
+https://easyjava.ru/data/jpa/jpa-entity-mapping/
+
 ### Mapping to a Table
 
 ### Mapping Simple Types
@@ -82,6 +86,8 @@ operating on a particular entity.
 ### Mapping the Primary Key
 
 ### Mapping Relationships (Unidirectional, Bidirectional, Many-to-One, One-to-One, Many-to-Many)
+
+https://easyjava.ru/data/jpa/jpa-i-svyazi-mezhdu-obektami/
 
 ### Embedded Objects
 
