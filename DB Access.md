@@ -31,7 +31,7 @@ object-relational mapping, often referred to as O-R mapping or simply ORM.
 
 ## JPA: EntityManager, Persistence Context, Persistence Unit and EntityManagerFactory concepts
 
-![jpa_concept] (files/JPA_concept.jpg)
+![jpa_concept](files/JPA_concept.jpg)
 
 The Java Persistence API is a lightweight, POJO-based framework for Java persistence.   
 
