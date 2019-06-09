@@ -31,6 +31,8 @@ object-relational mapping, often referred to as O-R mapping or simply ORM.
 
 ## JPA: EntityManager, Persistence Context, Persistence Unit and EntityManagerFactory concepts
 
+https://habr.com/ru/post/265061/ 
+
 ![jpa_concept](files/JPA_concept.jpg)
 
 https://easyjava.ru/data/jpa/jpa-entitymanager-upravlyaem-sushhnostyami/ 
