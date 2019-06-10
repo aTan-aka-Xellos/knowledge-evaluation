@@ -208,4 +208,40 @@ Bean scopes
 * session 
 * globalSession 
 
+### Bean validtion: create custom validation
+
+### Bean validation: organize validation in Validation Groups
+
+https://docs.jboss.org/hibernate/validator/5.1/reference/en-US/html/chapter-groups.html
+
+### Bean validation: integration with JPA
+
+https://www.logicbig.com/tutorials/java-ee-tutorial/jpa/bean-validation.html
+
+
+## [Deployment descriptor: Web Fragments](https://www.oracle.com/technetwork/javaee6overview-part2-136353.html)
+
+Web fragments enable web frameworks to self-register, eliminating the need for you to register them through deployment descriptors.  
+
+
+## DI containers (Spring/Google Guice/EJB3): configuration
+
+http://spring-projects.ru/guides/lessons/lesson-2  
+https://www.javacodegeeks.com/2017/11/difference-component-service-controller-repository-spring.html  
+
+@Configuration  
+@Bean - can be used both in @Configuration and @Component
+
+
+
+
+
+
+
+
+
+
+
+
+
 
