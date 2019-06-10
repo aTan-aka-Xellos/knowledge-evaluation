@@ -232,16 +232,3 @@ https://www.javacodegeeks.com/2017/11/difference-component-service-controller-re
 @Configuration  
 @Bean - can be used both in @Configuration and @Component
 
-
-
-
-
-
-
-
-
-
-
-
-
-
